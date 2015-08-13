@@ -1,5 +1,5 @@
 ---
-title: "Course Pacing STT 5811"
+title: "Tentative Course Schedule STT 5811"
 author: "Alan Arnholt"
 date: "`r Sys.Date()`"
 output: html_document
@@ -27,11 +27,17 @@ General Notes:
 
 * When you register for a free individual GitHub account, request a [student discount](https://education.github.com) to obtain a few private repositories as well as unlimited public repositories.  Please use something similar to **first_name_last_name** as your username when you register with GitHub.  For example, my username on GitHub is *alanarnholt*. If you have a popular name such as John Smith, you may need to provide some other distinquishing characteristic in your username.  Please use the same **username** for your account on Rpubs. 
 
-* Once you have a GitHub account, send an email to arnholtat@appstate.edu with a Subject line of **STT 5811 - GitHub Username**, and tell me in the body of your email your first name, last name, and your GitHub username.  I will then manually add you as a team member to the repository in the STT2810-SP15 organization that has your name (**Last_name-First_name**).  This repository will be where you store all of your work for this course.  I will also change your repository to a private repository.
+* Once you have a GitHub account, send an email to arnholtat@appstate.edu with a Subject line of **STT 5811 - GitHub Username**, and tell me in the body of your email your first name, last name, and your GitHub username.  I will then manually add you as a team member to the repository in the STAT-ATA-ASU organization that has your name (**Last_name-First_name**).  This repository will be where you store all of your work for this course.  I will also change your repository to a private repository.
 
 * Become familiar with the Appstate [RStudio server](https://mathr.math.appstate.edu/). You will use your Appstate user name and password to log in to the server.  You must be registered in the class to access the server.
 
 * Read Chapters 1-3 in Passion Driven Statistics (Light Weight) (PDS), and watch all linked videos in PDS.  The PDS text is maintained at [this repository](https://github.com/alanarnholt/PDS-Book).  There is also a copy on [RPubs](http://rpubs.com/arnholt/97944) (but it may not be as current as the repository).
+
+* Select a data set you will work with and update your GitHub repository **README** with your chosen data set.  
+
+* Complete the Medical Record Assignment, and push your excel spreadsheet to your GitHub account. 
+
+
 
 Watch the following videos:
 
@@ -41,9 +47,6 @@ Watch the following videos:
 
 * Test drive RStudio by following the directions from [Jenny Bryan's STAT 545 course](http://stat545-ubc.github.io/git05_first-use-git-rstudio.html).
 
-* Select a data set you will work with and update your GitHub repository **README** with your chosen data set.  
-
-* Complete the Medical Record Assignment, and push your excel spreadsheet to your GitHub account. 
 
 #### Optional
 * You may want to install [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), [zotero](https://www.zotero.org), and optionally [$LaTeX$](http://www.ctan.org/starter) on your personal computer. If you do, you will want to follow Jenny Bryan's excellent advice for [installing R and RStudio](http://stat545-ubc.github.io/block000_r-rstudio-install.html) and [installing Git](http://stat545-ubc.github.io/git01_git-install.html). Note: [Git](http://git-scm.com/downloads), [R](http://cran.r-project.org), [RStudio](http://www.rstudio.com/products/rstudio/download/), and [$LaTeX$](http://www.ctan.org/starter) are installed on the [Appstate RStudio](https://mathr.math.appstate.edu/) server.
@@ -52,7 +55,8 @@ Watch the following videos:
 
 * [Install R on Mac (2 min)](https://www.youtube.com/watch?v=lJxVRgiX-ik)    
 * [Install R for Windows (3 min)](https://www.youtube.com/watch?v=LII6of-5Odw)    
-* [Install R and RStudio on Windows (5 min)](https://www.youtube.com/watch?v=eD07NznguA4)         
+* [Install R and RStudio on Windows (5 min)](https://www.youtube.com/watch?v=eD07NznguA4)    
+
 
 **Wednesday**
 
@@ -60,9 +64,13 @@ Watch the following videos:
 
 * Read and Complete *Investigation B: Random Babies* from ISCAMIII prior to class.
 
+* Submit at least one suggestion for improving the week 3 (**Literature Review / Citation  Assignment (PR#1)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
 **Friday**
 
 * Read and Complete *Investigation 1.1: Friend or Foe?* from ISCAMIII prior to class.
+
+* Discuss and finalize the week 3 (**Literature Review / Citation  Assignment (PR#1)**) grading rubric.
 
 ### Week 2: (Aug 24, 26, 28)
 
@@ -72,27 +80,29 @@ Watch the following videos:
 
 * Using zotero will be covered.
 
-* This week you will work on your personal Code Book.  You will show the instructor your folder in class.  The instructor will record your folder in the grade book as either a GO or NOGO.  
+* Work on your personal Code Book.  You will show the instructor your folder in class.  The instructor will record your folder in the grade book as either a GO or NOGO.  
 
 * Watch the first 22 minutes of [Speaking Analytics: RStudio, Shiny, and RMarkdown Webinar](https://www.rstudio.com/resources/webinars/).
 
-* This week you will work on the citation assignment.
+* Work on the citation assignment.
 
 * [Fork](https://help.github.com/articles/fork-a-repo/) this repository.  
 
 * Watch [creating RStudio projects from Github Repos (5 min)](https://www.youtube.com/watch?v=YxZ8J2rqhEM) 
 
 * Clone the repository to your local machine using RStudio by following these instructions:
-1. Copy the clone URL to the clipboard.
-2. Click `File > New Project > Version Control > Git`
-3. Paste the clone URL (`https://github.com/YourUserName/STT2810-ASU/STT2810ClassRepo.git`) in the `Repository URL:` box.
-4. Type a name (suggestion `UserNameSTT2810`) in the `Project directory name:` box.
-5. Change if needed the location in the `Create project as subdirectory of:` box.
-6. Click the `Create Project` box.  You should now have a local copy of the forked repository on your local machine.  Congratulations!  
+
+1. Fork the repository.
+2. Copy the clone URL to the clipboard.
+3. Click `File > New Project > Version Control > Git`
+4. Paste the clone URL (`https://github.com/YourUserName/STAT-ATA-ASU/STT2810ClassRepo.git`) in the `Repository URL:` box.
+5. Type a name (suggestion `UserNameSTT2810`) in the `Project directory name:` box.
+6. Change if needed the location in the `Create project as subdirectory of:` box.
+7. Click the `Create Project` box.  You should now have a local copy of the forked repository on your local machine.  Congratulations!  
 
 * Set the upstream remote in your fork to this repository with the command
 ```
-git remote add upstream https://github.com/STT2810-ASU/STT2810ClassRepo.git
+git remote add upstream https://github.com/STAT-ATA-ASU/STT2810ClassRepo.git
 ```
 * Verify with
 ```
@@ -104,15 +114,21 @@ git pull upstream master
 ```
 * If there are conflicts, you will need to resolve them before proceeding.
 
+* Submit ISCAM PR#1.
+
 **Wednesday**
 
 * Read chapter 3 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
 
 * Read and Complete *Investigation 1.2: Do Names Match Faces?* from ISCAMIII prior to class.
 
+* Submit at least one suggestion for improving the week 4 (**Research Plan Assignment (PR#2)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
 **Friday**
 
 * Read and Complete *Investigation 1.3: Heart Transplant Mortality* from ISCAMIII prior to class.
+
+* Discuss and finalize the week 4 (**Research Plan Assignment (PR#2)**) grading rubric.
 
 ### Week 3 (Aug 31, Sep 2, 4)
 
@@ -147,15 +163,21 @@ author:
 
 A well-written paper that convinces you the author has reviewed the literature, has a topic that will expand the knowledge in the area, and has used at least five references should receive a 3.  A submission that satisfies two of the three criteria perfectly or most but not all of the three criteria should receive a 2.  A submission that satisfies only one of the three criteria should receive a 1.  If the submission does not render or the submitter did not submit the correct assignment, they should receive a 0.
 
+* Submit ISCAM PR#2.
+
 **Wednesday**
 
 * Read chapter 4 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
 
 * Read and Complete *Investigation 1.4: Kissing The Right Way* from ISCAMIII prior to class.
 
+* Submit at least one suggestion for improving the week 6 (**Data Management Assignment (PR#3)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
 **Friday**
 
 * Read and Complete *Investigation 1.5: Kissing The Right Way (cont.)* from ISCAMIII prior to class.
+
+* Discuss and finalize the week 6 (**Data Management Assignment (PR#3)**) grading rubric.
 
 ### Week 4: (Sep 7 (no Class), 9, 11)
 
@@ -164,8 +186,7 @@ A well-written paper that convinces you the author has reviewed the literature, 
 * Read/review Chapters 4-5 of PDS as needed.  
 * Work on **Research Plan Assignment** PDS.
 * Peer reviews for **Literature Review / Citation Assignment** are due NLT 11 PM Tuesday.
-* **Research Plan Assignment** PDS is due NLT 5 PM Friday (Sep 11).  Submit assignment
-via [http://www.crowdgrader.org](http://www.crowdgrader.org).  The direct link for the **Research Plan Assignment** is [http://www.crowdgrader.org/](http://www.crowdgrader.org/)
+* **Research Plan Assignment** PDS is due NLT 5 PM Friday (Sep 11).  
          
 
 #### Grading Rubric for **Research Plan Assignment** (PR#2)
@@ -184,13 +205,21 @@ via [http://www.crowdgrader.org](http://www.crowdgrader.org).  The direct link f
 
 A well-written paper that convinces you the author can fill a gap in the existing scholarship, has a title that is a concise statement of the main topic and identifies the actual variables under investigation and the relationship between them, has an introduction supported with at least five references, has a Methods section that describes the sample, measures, and procedures, and has a section that discusses real implications linked to possible results should receive a 3.  A submission that satisfies two of the three criteria perfectly or most but not all of the three criteria should receive a 2.  A submission that satisfies only one of the three criteria should receive a 1.  If the submission does not render or the submitter did not submit the correct assignment, they should receive a 0.
 
+* Submit ISCAM PR#3.
+
 **Wednesday**
+
 * Read chapter 5 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
 
 * Read and Complete *Investigation 1.6: Improved Baseball Player* from ISCAMIII prior to class.
 
+* Submit at least one suggestion for improving the week 7 (**Univariate Graphing Assignment (PR#4)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
 **Friday**
+
 * Read and Complete *Investigation 1.7: Reese’s Pieces* from ISCAMIII prior to class.
+* Discuss and finalize the week 7 **Univariate Graphing Assignment (PR#4)** grading rubric.
+* After action review of **Literature Review / Citation Assignment (PR#1)**.
 
 ### Week 5: (Sep 14, 16, 18)
 
@@ -205,6 +234,7 @@ A well-written paper that convinces you the author can fill a gap in the existin
 * Watch the [Working with Data video](https://www.youtube.com/watch?v=d9TgAspq9bA&index=52&list=PLDEF0B9CBD27AD37E) (41 min)
 * Watch the [Data Management video](https://www.youtube.com/watch?v=thGk4CUEXQ8&list=PLDEF0B9CBD27AD37E&index=53) (39 min).
 * Complete you peer grading evaluations for the **Research Plan Assignment** NLT 11 PM Tuesday.
+* Submit ISCAM PR#4.
 
 **The Data Management Assignment is Challenging and will require many hours of your time---so please start now --- not next week when it is due**
 
@@ -214,9 +244,13 @@ A well-written paper that convinces you the author can fill a gap in the existin
 
 * Read and Complete *Investigation 1.8: Is ESP real?* from ISCAMIII prior to class.
 
+* Submit at least one suggestion for improving the week 8 (**Bivariate Graphing Assignment (PR#5)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
 **Friday**
 
 * Read and Complete *Investigation 1.9: Halloween Treat Choices* from ISCAMIII prior to class.
+* Discuss and finalize the week 8 **Bivariate Graphing Assignment (PR#5)** grading rubric.
+* After action review of **Research Plan Assignment (PR#2)**.
 
 ### Week 6: (Sep 21, 23, 25)
 
@@ -256,6 +290,8 @@ I will use the same grading rubric (below) you used in the peer evaluation phase
 
 A well-written paper that convinces you the author can fill a gap in the existing scholarship, has a title that is a concise statement of the main topic and identifies the actual variables under investigation and the relationship between them, has an introduction supported with at least five references, has a Methods section that describes the sample, measures, and procedures, and has a section that discusses real implications linked to possible results should receive a 3.  A submission that satisfies two of the three criteria perfectly or most but not all of the three criteria should receive a 2.  A submission that satisfies only one of the three criteria should receive a 1.  If the submission does not render or the submitter did not submit the correct assignment, they should receive a 0.
 
+* Submit ISCAM PR#5.
+
 **Wednesday**
 
 * Read chapter 7 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
@@ -265,6 +301,7 @@ A well-written paper that convinces you the author can fill a gap in the existin
 **Friday**
 
 * Read and Complete *Investigation 1.11: Heart Transplant Mortality (cont)* from ISCAMIII prior to class.
+* After action review of **Research Plan Assignment (PR#3)**.
 
 ### Week 7: (Sep 28, 30, Oct 2)
 
@@ -288,15 +325,28 @@ Is there either a histogram or density plot of one of the numeric variables prop
 
 When describing the distribution of the reported histogram or density plot, does the author describe the shape (0.25) and use appropriate statistics to characterize the center (0.25) and spread (0.25)?
 
+* Submit ISCAM PR#6.
+
+
 **Wednesday**
 
 * Read chapter 8 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
 
 * Read and Complete *Investigation 1.12: Sampling Words* from ISCAMIII prior to class.
 
+* Submit at least one suggestion for improving the week 10 (**ANOVA Assignment (PR#6)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
 **Friday**
 
 * Read and Complete *Investigation 1.13: Literary Digest* from ISCAMIII prior to class.
+
+* Discuss and finalize the week 10 **ANOVA Assignment (PR#6)** grading rubric.
+
+* After action review of **Research Plan Assignment (PR#4)**.
+
+
+
+
 
 ### Week 8: (Oct 5, 7, 9)
 
@@ -330,15 +380,22 @@ Is there a multivariate graph of the principal constructs the researcher is prop
 
 Do all graphs have the *x-* and *y-*axes labeled appropriately? (0.25). Do all graphs have descriptive titles? (0.25)
 
+* Submit ISCAM PR#7.
+
 **Wednesday**
 
 * Read chapter 9 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
 
 * Read and Complete *Investigation 1.14: Sampling Words (cont.) from ISCAMIII prior to class.
 
+* Submit at least one suggestion for improving the week 11 (**Chi-Square Assignment (PR#7)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
 **Friday**
 
 * Read and Complete *Investigation 1.15: Freshmen Voting Pattern* from ISCAMIII prior to class.
+* Discuss and finalize the week 11 **Chi-Square Assignment (PR#7)** grading rubric.
+* After action review of **Univariate Graphing Assignment (PR#4)**.
+
 
 ### Week 9: (Oct 12, 14 --- Fall Break Oct 15, 16)
 
@@ -347,6 +404,7 @@ Do all graphs have the *x-* and *y-*axes labeled appropriately? (0.25). Do all g
 * Read Chapter 10 of PDS (Hypothesis Testing), and watch all videos in the chapter.
 * Read the documents `SamplingDistributions.html` and `StatisticsTemplate.html` in the `/Statistics` folder.
 
+* Submit ISCAM PR#8.
  
 You should revise your assignment from last week as needed based on peer comments.  I encourage everyone to make an appointment with the writing center and to have the writing center review your current assignment.
 
@@ -367,8 +425,6 @@ You should revise your assignment from last week as needed based on peer comment
 
 * Read Chapter 11 of PDS (Analysis of Variance), and watch all videos in the chapter.
 * Read the document `ANOVA.html` in the `/Statistics` folder.
-
- 
 * Work on the **ANOVA Assignment** 
 * The **ANOVA Assignment** is due NLT 5 PM Friday (Oct 23).  Submit assignment
 via [http://www.crowdgrader.org](http://www.crowdgrader.org).  The direct link for the **ANOVA Assignment** is (http://www.crowdgrader.org/).
@@ -397,15 +453,21 @@ Is there code and output for testing the null hypothesis with an ANOVA? (0.6)
 
 Is there an appropriate explanation of the results including a post hoc test with interpretation if the results from the ANOVA are significant? (0.6)
 
+* Submit ISCAM PR#9.
+
 **Wednesday**
 
 * Read chapter 11 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
 
 * Read and Complete *Investigation 1.17: Cat Households* from ISCAMIII prior to class.
 
+* Submit at least one suggestion for improving the week 12 (**Correlation Assignment (PR#8)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
 **Friday**
 
 * Read and Complete *Investigation 1.18: Female Senators* from ISCAMIII prior to class.
+* Discuss and finalize the week 12 **Correlation Assignment (PR#8)** grading rubric.
+* After action review of **Bivariate Graphing Assignment (PR#5)**.
 
 ### Week 11: (Oct 26, 28, 30)
 
@@ -449,15 +511,21 @@ Are there appropriate post-hoc tests if the Chi-Square test resulted in a signif
 
 Is there a sentence or two describing the results of the Chi-Square test(s)? (0.3)
 
+* Submit ISCAM PR#10.
+
 **Wednesday**
 
 * Read chapter 12 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
 
 * Read and Complete *Investigation 2.1: Birth Weights* from ISCAMIII prior to class.
 
+* Submit at least one suggestion for improving the week 13 (**Regression Assignment (PR#9)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+
 **Friday**
 
 * Read and Complete *Investigation 2.2: How Long Can You Stand It?* from ISCAMIII prior to class.
+* Discuss and finalize the week 13 **Regression Assignment (PR#9)** grading rubric.
+* After action review of **ANOVA Assignment (PR#6)**.
 
 ### Week 12: (Nov 2, 4, 6)
 
@@ -496,6 +564,8 @@ Does the author explain their results following the example in PDS? (0.3)
 
 Does the author explain their results? (Graphs should be used in the explanation.) (0.3)
 
+* Submit ISCAM PR#11.
+
 **Wednesday**
 
 * Read chapter 13 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
@@ -505,7 +575,7 @@ Does the author explain their results? (Graphs should be used in the explanation
 **Friday**
 
 * Read and Complete *Investigation 2.4: The Ethan Allen* from ISCAMIII prior to class.
-
+* After action review of **Chi-Square Assignment (PR#7)**.
 
 ### Week 13: (Nov 9, 11, 13)
 
@@ -513,6 +583,7 @@ Does the author explain their results? (Graphs should be used in the explanation
 * Read Chapters 15 and 17 in PDS (Linear Regression and Confounding and Multivariate Models) and watch the embedded videos. 
 * Read the document `Regression.html` in the `/Regression` folder. 
 * Work on your poster.
+* Submit ISCAM PR#12.
 
  
 * Work on the **Regression Assignment** 
@@ -539,6 +610,7 @@ Does the author describe their results appropriately? (1)
 **Friday**
 
 * Read and Complete *Investigation 2.6: Healthy Body Temperatures (cont.)* from ISCAMIII prior to class.
+* After action review of **ANOVA Assignment (PR#8)**.
 
 ### Week 14: (Nov 16, 18, 20)
 
@@ -546,6 +618,7 @@ Does the author describe their results appropriately? (1)
 
 * Read Chapters 16 and 18 in PDS (Sampling and Designing Studies and Poster Presentation), and watch the embedded videos. 
 * Work on your poster.
+* Submit ISCAM PR#13.
 
 **Wednesday**
 
@@ -554,12 +627,13 @@ Does the author describe their results appropriately? (1)
 **Friday**
 
 * Read and Complete *Investigation 2.8: Turbidity* from ISCAMIII prior to class.
+* After action review of **Regression Assignment (PR#9)**.
  
 ### Week 15: (Nov 23, No Class Nov 25, 26, and 27; Nov 30, Dec 2----Poster Presentation Dec 3)
 
 * Work on your poster.
 * Print out your poster.
-* Present your poster (Dec 3....reserve room in Student Union).
+* Present your poster (Dec 3).
 * Celebrate!
 
 
