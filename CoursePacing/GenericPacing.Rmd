@@ -13,7 +13,7 @@ General Notes:
 
 3.  All PDS CrowdGrader peer reviews must be completed by 11 PM on Tuesdays and all ISCAMIII peer reviews must be completed by 11 PM on Saturdays.
 
-4.  Peer review feedback will close at 8 AM Wednesdays for PDS CrowdGrader assignments and 8 AM Mondays for ISCAMIII Crowdgrader assignments.
+4.  Peer review feedback will close at 8 AM Wednesdays for PDS CrowdGrader assignments and 8 AM Mondays for ISCAMIII CrowdGrader assignments.
 
 5. The class will update the grading rubrics for the PDS assignments two weeks prior to each due date (for STT 2810).
 
@@ -258,7 +258,7 @@ A well-written paper that convinces you the author can fill a gap in the existin
 
 * Read/review Chapters 6 and 7 of PDS as needed.
 * This week you will "Manage your Data" based on your research proposal.
-* Submit via [http://www.crowdgrader.org](http://www.crowdgrader.org) the **Data Management Assignment** NLT 5 PM Friday (Sep 25). Directions: Select three _secondary_ categorical variables from the data set you are using.  Recode your data to create factors with appropriate labels.  Create a barplot for each of your factors, and write a sentence or two explaining each barplot.  Show all `R` code used to manage your data and used to create your barplots with `R` code chunks in your `*.Rmd` file.  Submit the resulting `*.html` file to crowdgrader.  The direct link for the **Data Management Assignment** is [http://www.crowdgrader.org/](http://www.crowdgrader.org/).  
+* Submit via [http://www.crowdgrader.org](http://www.crowdgrader.org) the **Data Management Assignment** NLT 5 PM Friday (Sep 25). Directions: Select three _secondary_ categorical variables from the data set you are using.  Recode your data to create factors with appropriate labels.  Create a barplot for each of your factors, and write a sentence or two explaining each barplot.  Show all `R` code used to manage your data and used to create your barplots with `R` code chunks in your `*.Rmd` file.  Submit the resulting `*.html` file to CrowdGrader.  The direct link for the **Data Management Assignment** is [http://www.crowdgrader.org/](http://www.crowdgrader.org/).  
 
 #### Grading Rubric for **Data Management Assignment** (PR#3)
 
@@ -558,7 +558,7 @@ Do all graphs have the *x-* and *y-*axes labeled appropriately? (0.1). Do all gr
 
 Is there a section for the Correlation assignment describing the two numeric variables the author uses? (0.5)
 
-Is there code and output for computing the correlation coeffiecient? (0.4)
+Is there code and output for computing the correlation coefficient? (0.4)
 
 Does the author explain their results following the example in PDS? (0.3)
 
