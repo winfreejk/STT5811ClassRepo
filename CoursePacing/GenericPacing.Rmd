@@ -19,6 +19,16 @@ General Notes:
 
 6. Mondays will be devoted to material in PDS, and Wednesdays and Fridays will be devoted to investigations from ISCAMIII.
 
+7. Directions for all **ISCAM PR#** submissions:
+
+  a. All submissions must be in R markdown.
+  b. Write out all questions you are assigned to answer from ISCAM III.
+  c. Bold or italicize your answers.  
+  d. Answer all assigned ISCAM III questions by implementing simulations,   exact answers, etc. with `R`.  
+  e. Write a one paragraph summary ($\leq 1$ page) on what you read    in the previous week's assignment in *Reproducible Research with R and RStudio* including what you found most immediately useful or what   could have been useful to you in the past.
+  
+8.  The grading rubric for all **ISCAM PR#** submissions can be found in the [grubric](https://github.com/STAT-ATA-ASU/STT5811ClassRepo/tree/master/grubric) directory.  
+
 ### Week 1: (Aug 17, 19, 21)
 
 **Monday**
@@ -114,7 +124,7 @@ git pull upstream master
 ```
 * If there are conflicts, you will need to resolve them before proceeding.
 
-* Submit ISCAM PR#1.
+* Submit ISCAM PR#1 (*Investigation B: Random Babies* letters i and o, *Investigation 1.1: Friend or Foe?* letters a, f, g, h, l, and m.)
 
 **Wednesday**
 
@@ -140,7 +150,7 @@ git pull upstream master
 
 * Integrating [zotero](www.zotero.com) with [RMarkdown](http://rmarkdown.rstudio.com) will be discussed during the first part of the week.  Example document will be stored in this folder.
 
-* You may find these [videos helpful:](https://www.youtube.com/watch?v=dto4gARbsi0&list=PLJBNI3mCp9g0wsSDK111qgimqVF1dwPXO).
+* You may find these [videos helpful](https://www.youtube.com/watch?v=dto4gARbsi0&list=PLJBNI3mCp9g0wsSDK111qgimqVF1dwPXO).
 
 
 * Students will continue to work on the Literature Review / Citation assignment.
