@@ -124,7 +124,7 @@ git pull upstream master
 ```
 * If there are conflicts, you will need to resolve them before proceeding.
 
-* Submit ISCAM PR#1 (*Investigation B: Random Babies* letters i and o, *Investigation 1.1: Friend or Foe?* letters a, f, g, h, l, and m.)
+* Submit ISCAM PR#1 (*Investigation B: Random Babies* parts i and o; *Investigation 1.1: Friend or Foe?* parts a, f, g, h, l, and m; RR chapters 1-2.)
 
 **Wednesday**
 
