@@ -2,7 +2,7 @@
 title: "Tentative Course Schedule STT 5811"
 author: "Alan Arnholt"
 date: '`r Sys.Date()`'
-output: pdf_document
+output: html_document
 ---
 
 General Notes:
