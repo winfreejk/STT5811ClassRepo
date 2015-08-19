@@ -77,7 +77,7 @@ img {
 <pre class="r"><code>&gt; babies &lt;- c(&quot;Marvin&quot;, &quot;Willie&quot;, &quot;Billy&quot;, &quot;Sam&quot;)
 &gt; shuffle &lt;- sample(babies, size = 4, replace = FALSE)
 &gt; shuffle</code></pre>
-<pre><code>[1] &quot;Billy&quot;  &quot;Sam&quot;    &quot;Marvin&quot; &quot;Willie&quot;</code></pre>
+<pre><code>[1] &quot;Sam&quot;    &quot;Billy&quot;  &quot;Marvin&quot; &quot;Willie&quot;</code></pre>
 <pre class="r"><code>&gt; babies == shuffle</code></pre>
 <pre><code>[1] FALSE FALSE FALSE FALSE</code></pre>
 <pre class="r"><code>&gt; NumberCorrect &lt;- sum(babies == shuffle)
@@ -93,7 +93,7 @@ img {
 &gt; xtabs(~NumberCorrect)/nights</code></pre>
 <pre><code>NumberCorrect
      0      1      2      4 
-0.3699 0.3314 0.2541 0.0446 </code></pre>
+0.3704 0.3326 0.2533 0.0437 </code></pre>
 <pre class="r"><code>&gt; # Exact answer through enumeration
 &gt; library(combinat)
 &gt; library(MASS)
@@ -120,13 +120,13 @@ img {
 <pre class="r"><code>&gt; babies &lt;- c(&quot;Marvin&quot;, &quot;Willie&quot;, &quot;Billy&quot;, &quot;Sam&quot;)
 &gt; shuffle &lt;- sample(babies, size = 4, replace = FALSE)
 &gt; shuffle</code></pre>
-<pre><code>[1] &quot;Willie&quot; &quot;Marvin&quot; &quot;Sam&quot;    &quot;Billy&quot; </code></pre>
+<pre><code>[1] &quot;Sam&quot;    &quot;Willie&quot; &quot;Billy&quot;  &quot;Marvin&quot;</code></pre>
 <pre class="r"><code>&gt; babies == shuffle</code></pre>
-<pre><code>[1] FALSE FALSE FALSE FALSE</code></pre>
+<pre><code>[1] FALSE  TRUE  TRUE FALSE</code></pre>
 <pre class="r"><code>&gt; NumberCorrect &lt;- sum(babies == shuffle)
 &gt; NumberCorrect</code></pre>
-<pre><code>[1] 0</code></pre>
-<p>This simulates the process and in this particular simulation, 0 mother(s) received the correct child.</p>
+<pre><code>[1] 2</code></pre>
+<p>This simulates the process and in this particular simulation, 2 mother(s) received the correct child.</p>
 <ol start="3" style="list-style-type: lower-alpha">
 <li><p>Did everyone in class obtain the same number of matches? If not, why not? <em>Random variation will most likely give everyone different answers.</em></p></li>
 <li><p>Repeat your shuffling process 4 more times (for a total of 5 trials):</p></li>
@@ -139,12 +139,12 @@ img {
 + }
 &gt; xtabs(~NumberCorrect)</code></pre>
 <pre><code>NumberCorrect
-0 1 2 4 
-1 1 2 1 </code></pre>
+0 1 
+3 2 </code></pre>
 <pre class="r"><code>&gt; xtabs(~NumberCorrect)/nights</code></pre>
 <pre><code>NumberCorrect
-  0   1   2   4 
-0.2 0.2 0.4 0.2 </code></pre>
+  0   1 
+0.6 0.4 </code></pre>
 <p>Then pool your results with those of your classmates. Tally how many outcomes resulted in each value, and also compute the proportion of the trials that resulted in each value. (This simulation assumes 30 students.)</p>
 <pre class="r"><code>&gt; nights &lt;- 30
 &gt; NumberCorrect &lt;- numeric(nights)
@@ -155,15 +155,15 @@ img {
 &gt; xtabs(~NumberCorrect)</code></pre>
 <pre><code>NumberCorrect
  0  1  2  4 
-10 13  5  2 </code></pre>
+14  7  7  2 </code></pre>
 <pre class="r"><code>&gt; TAs &lt;- xtabs(~NumberCorrect)/nights
 &gt; TAs</code></pre>
 <pre><code>NumberCorrect
          0          1          2          4 
-0.33333333 0.43333333 0.16666667 0.06666667 </code></pre>
+0.46666667 0.23333333 0.23333333 0.06666667 </code></pre>
 <ol start="5" style="list-style-type: lower-alpha">
-<li><p>Calculate the proportion of trials for which at least one mother received her own baby [Hint: Note, there are two ways you can find this value: Sum up all the proportions corresponding to 1, 2, 3, or 4 matches or consider the “complement” = no matches and take one minus that proportion.] <em>The proportion of trials for which at least one mother recieved her own baby is 0.6666667.</em></p></li>
-<li><p>The proportion you have calculated is an estimate of how often this happens. How does this proportion compare to your prediction in a.? The theoretical answer (prediction) is 0.625 while the simulation based on the cumulative results of 30 (nights/students) is 0.6666667.</p></li>
+<li><p>Calculate the proportion of trials for which at least one mother received her own baby [Hint: Note, there are two ways you can find this value: Sum up all the proportions corresponding to 1, 2, 3, or 4 matches or consider the “complement” = no matches and take one minus that proportion.] <em>The proportion of trials for which at least one mother recieved her own baby is 0.5333333.</em></p></li>
+<li><p>The proportion you have calculated is an estimate of how often this happens. How does this proportion compare to your prediction in a.? The theoretical answer (prediction) is 0.625 while the simulation based on the cumulative results of 30 (nights/students) is 0.5333333.</p></li>
 <li><p>How could we improve our estimate of how often this happens? <em>Simulate more nights.</em></p></li>
 </ol>
 <p>Open the <a href="http://www.rossmanchance.com/applets/randomBabies/RandomBabies.html">Random Babies</a> applet and press <strong>Randomize</strong>. Notice that the applet randomly returns babies to mothers and determines how many babies are returned to the correct home (by matching diaper colors). The applet also counts and graphs the resulting number of correct matches. Uncheck the <strong>Animate</strong> box and press <strong>Randomize</strong> a few more times. You should see the results accumulate in the table and the histogram. Click on the bar in the histogram representing the outcome of zero mothers receiving the correct baby. The graph on the right changes to a “time plot” of the proportion (relative frequency) of trials with 0 matches vs. the number of trials. Set the <strong>Number of trials</strong> to 100 and press <strong>Randomize</strong> a few times, noticing the behavior of the time plot.</p>
@@ -180,15 +180,15 @@ img {
 &gt; xtabs(~NumberCorrect)</code></pre>
 <pre><code>NumberCorrect
     0     1     2     4 
-37343 33438 25171  4048 </code></pre>
+37434 33533 25048  3985 </code></pre>
 <pre class="r"><code>&gt; TAsi &lt;- xtabs(~NumberCorrect)/nights
 &gt; TAsi</code></pre>
 <pre><code>NumberCorrect
       0       1       2       4 
-0.37343 0.33438 0.25171 0.04048 </code></pre>
-<p><em>The R simulation with 100,000 trials/nights returns and estimated probability that zero mothers receive thier own baby of 0.37343.</em></p>
+0.37434 0.33533 0.25048 0.03985 </code></pre>
+<p><em>The R simulation with 100,000 trials/nights returns and estimated probability that zero mothers receive thier own baby of 0.37434.</em></p>
 <ol start="10" style="list-style-type: lower-alpha">
-<li><p>Based on your answer to i., what is your estimate for the probability that at least one mother receives her own baby? Do all of your classmates obtain the same estimate? <em>The estimated probability that at least one mother receives her own baby is 0.62657. Answers should be close to 0.625.</em></p></li>
+<li><p>Based on your answer to i., what is your estimate for the probability that at least one mother receives her own baby? Do all of your classmates obtain the same estimate? <em>The estimated probability that at least one mother receives her own baby is 0.62566. Answers should be close to 0.625.</em></p></li>
 <li><p>Consider the table of Cumulative Results in the applet. One value for the number of matches is fairly unlikely, but does occur once in a while. Which outcome is this? <em><span class="math">\(P(X = 4) = 1/24\)</span></em></p></li>
 <li><p>One outcome is actually impossible to occur. Which outcome is this? Explain why it is impossible. <em>It is impossible to get exactly 3 matches because once 3 out of four match, the fourth must also match.</em></p></li>
 <li><p>Calculate the average number of matches for your 1000 (or however many you performed) trials. [Hint: Use a weighted average (<span class="math">\(\sum x_if_i)/N\)</span> where <span class="math">\(x_i\)</span> is the number of matches and <span class="math">\(f_i\)</span> is the corresponding frequency, and <span class="math">\(N\)</span> is the number of repetitions you simulated.]</p></li>
@@ -196,11 +196,11 @@ img {
 <pre class="r"><code>&gt; TAsi</code></pre>
 <pre><code>NumberCorrect
       0       1       2       4 
-0.37343 0.33438 0.25171 0.04048 </code></pre>
+0.37434 0.33533 0.25048 0.03985 </code></pre>
 <pre class="r"><code>&gt; EMS &lt;- sum(TAsi * c(0, 1, 2, 4))
 &gt; EMS</code></pre>
-<pre><code>[1] 0.99972</code></pre>
-<p>The average number (answers will vary each time the simulation is run) of matches based on <span class="math">\(10^{5}\)</span> trials is 0.99972.</p>
+<pre><code>[1] 0.99569</code></pre>
+<p>The average number (answers will vary each time the simulation is run) of matches based on <span class="math">\(10^{5}\)</span> trials is 0.99569.</p>
 <ol start="14" style="list-style-type: lower-alpha">
 <li>Select the Average radio button above the time plot. Describe the behavior of this graph and comment on what it reveals about the (cumulative) behavior of the average number of matches over many trials (How does it look after 100 trials? After 1000 trials?). <em>The average number of matches varies for the first few trials then settles down around 1.</em></li>
 </ol>
@@ -311,7 +311,7 @@ img {
 </ol>
 <p><strong>Probability Rule</strong>: When the outcomes in the sample space are equally likely, the probability of any one of a set of outcomes (an event) occurring is the number of outcomes in that set divided by the total number of outcomes in the sample space.</p>
 <ol start="18" style="list-style-type: lower-alpha">
-<li><p>To calculate the exact probability of 0 matches, divide the number of outcomes with 0 matches by the total number of possible outcomes. How does this result compare to your estimate from the simulation? <em><span class="math">\(P(X = 0) = 0.375\)</span> versus Simulation where <span class="math">\(P(X = 0) = 0.37343\)</span>.</em></p></li>
+<li><p>To calculate the exact probability of 0 matches, divide the number of outcomes with 0 matches by the total number of possible outcomes. How does this result compare to your estimate from the simulation? <em><span class="math">\(P(X = 0) = 0.375\)</span> versus Simulation where <span class="math">\(P(X = 0) = 0.37434\)</span>.</em></p></li>
 <li><p>Use this method to determine the exact probabilities for each possible value for the number of matches. Express these probabilities as fractions and as decimals in the table below.</p></li>
 </ol>
 <pre class="r"><code>&gt; TA</code></pre>
@@ -324,17 +324,17 @@ img {
 0.37500000 0.33333333 0.25000000 0.04166667 </code></pre>
 <ol start="20" style="list-style-type: lower-alpha">
 <li><p>What is the sum of these probabilities? Why does this make sense? <em>The sum of the probabilities is 1 which must be the case since these are all of the possibilities.</em></p></li>
-<li><p>What is the probability that at least one mother receives the correct baby? [Hint: Determine this two different ways: first by adding the probabilities of the corresponding values, and then by taking one minus the probability that this event does not happen.] How does this compare to the simulation results? <em>Theoretical <span class="math">\(P(X \geq 1) = 0.625.\)</span> Simulation <span class="math">\(P(X \geq 1) = 0.62657.\)</span> The values are very close.</em></p></li>
+<li><p>What is the probability that at least one mother receives the correct baby? [Hint: Determine this two different ways: first by adding the probabilities of the corresponding values, and then by taking one minus the probability that this event does not happen.] How does this compare to the simulation results? <em>Theoretical <span class="math">\(P(X \geq 1) = 0.625.\)</span> Simulation <span class="math">\(P(X \geq 1) = 0.62566.\)</span> The values are very close.</em></p></li>
 <li><p>Calculate the expected value of the number of matches. Comment on how it compares to the average value you obtained in the simulation. <em>The theoretical and simulated values are very close.</em></p></li>
 </ol>
 <pre class="r"><code>&gt; EMT &lt;- sum(FA * c(0, 1, 2, 4)) #Expected match theoretical
 &gt; EMT</code></pre>
 <pre><code>[1] 1</code></pre>
 <pre class="r"><code>&gt; EMS  # Expected match simulation</code></pre>
-<pre><code>[1] 0.99972</code></pre>
+<pre><code>[1] 0.99569</code></pre>
 <pre class="r"><code>&gt; PD &lt;- abs(EMS - EMT)/EMT
 &gt; PD   # Percent difference</code></pre>
-<pre><code>[1] 0.00028</code></pre>
+<pre><code>[1] 0.00431</code></pre>
 <ol start="23" style="list-style-type: lower-alpha">
 <li><p>Is the expected value for the number of matches equal to the most probable outcome? If not, explain what is meant by an “expected” value. <em>No the expected number of matches is 1 which does not equal the most probable outcome of 0. The expected value is a weighted average which does not have to be a possible outcome.</em></p></li>
 <li><p>Calculate the variance of the number of matches. Also take the square root to calculate the standard deviation SD(X).</p></li>
