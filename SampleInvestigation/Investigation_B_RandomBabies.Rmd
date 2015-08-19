@@ -1,0 +1,236 @@
+---
+title: 'Investigation B: Random Babies'
+author: "Alan T. Arnholt"
+date: '`r Sys.Date()`'
+output: html_document
+---
+
+
+
+```{r, label = "SETUP", echo = FALSE, results= 'hide', message = FALSE, warning = FALSE}
+library(knitr)
+knitr::opts_chunk$set(comment = NA, fig.show = 'as.is', fig.height = 4, fig.width = 4, prompt = TRUE, highlight = TRUE, tidy = FALSE, warning = FALSE, message = FALSE, tidy.opts=list(blank = TRUE, width.cutoff= 60, cache = TRUE))
+```
+
+
+### Investigation B: Random Babies
+
+Suppose that on one night at a certain hospital, four mothers give birth to baby boys. As a very sick joke, the hospital staff decides to return babies to their mothers completely at random. Our goal is to look for the pattern of outcomes from this process, with regard to the issue of how many mothers get the correct baby. This enables us to investigate the underlying properties of this child-returning process, such as the probability that at least one mother receives her own baby.
+
+(a) *Prediction*: If we were to repeat this process over many many nights, predict how often (what percentage of the nights) at least one mother will receive her own baby. Predict how often all four mothers will receive her own baby.
+
+```{r, label = "RBa"}
+babies <- c("Marvin", "Willie", "Billy", "Sam")
+shuffle <- sample(babies, size = 4, replace = FALSE)
+shuffle
+babies == shuffle
+NumberCorrect <- sum(babies == shuffle)
+NumberCorrect
+# Need to repeat this process many times
+nights <- 10000
+NumberCorrect <- numeric(nights)
+for(i in 1:nights){
+  shuffle <- sample(babies, size = 4, replace = FALSE)
+  NumberCorrect[i] <- sum(babies == shuffle)
+}
+xtabs(~NumberCorrect)/nights
+# Exact answer through enumeration
+library(combinat)
+library(MASS)
+Omega <- permn(babies)
+n <- length(Omega) # 
+NumberCorrect <- numeric(n)
+for(i in 1:n){
+NumberCorrect[i] <- sum(Omega[[i]] == babies)
+}
+FA <- xtabs(~NumberCorrect)/n
+FA
+TA <- fractions(xtabs(~NumberCorrect)/n)
+TA
+```
+
+Let the random variable $X$ represent the number of mothers that have their child returned. 
+$$P(X \geq 1)=P(X = 1) + P(X = 2) + P(X = 3) + P(X = 4) = `r sum(TA[2:4])`$$
+$$P(X = 4) = `r TA[4]`$$
+
+
+(b) How many mothers received the correct baby:
+
+```{r, label = "RBb"}
+babies <- c("Marvin", "Willie", "Billy", "Sam")
+shuffle <- sample(babies, size = 4, replace = FALSE)
+shuffle
+babies == shuffle
+NumberCorrect <- sum(babies == shuffle)
+NumberCorrect
+```
+
+This simulates the process and in this particular simulation, `r NumberCorrect` mother(s) received the correct child.
+
+(c) Did everyone in class obtain the same number of matches? If not, why not? *Random variation will most likely give everyone different answers.*
+
+(d) Repeat your shuffling process 4 more times (for a total of 5 trials):
+
+```{r, label = "RBd"}
+nights <- 5
+NumberCorrect <- numeric(nights)
+for(i in 1:nights){
+  shuffle <- sample(babies, size = 4, replace = FALSE)
+  NumberCorrect[i] <- sum(babies == shuffle)
+}
+xtabs(~NumberCorrect)
+xtabs(~NumberCorrect)/nights
+```
+
+Then pool your results with those of your classmates. Tally how many outcomes resulted in each value, and also compute the proportion of the trials that resulted in each value. (This simulation assumes 30 students.)
+
+```{r, label = "RBd1"}
+nights <- 30
+NumberCorrect <- numeric(nights)
+for(i in 1:nights){
+  shuffle <- sample(babies, size = 4, replace = FALSE)
+  NumberCorrect[i] <- sum(babies == shuffle)
+}
+xtabs(~NumberCorrect)
+TAs <- xtabs(~NumberCorrect)/nights
+TAs
+```
+
+(e) Calculate the proportion of trials for which at least one mother received her own baby [Hint: Note, there are two ways you can find this value: Sum up all the proportions corresponding to 1, 2, 3, or 4 matches or consider the "complement" = no matches and take one minus that proportion.] *The proportion of trials for which at least one mother recieved her own baby is `r 1 - TAs[1]`.*
+
+(f) The proportion you have calculated is an estimate of how often this happens. How does this proportion compare to your prediction in a.?  The theoretical answer (prediction) is `r sum(TA[2:4])` while the simulation based on the cumulative results of `r nights` (nights/students) is `r sum(TAs[2:4])`. 
+
+(g) How could we improve our estimate of how often this happens? *Simulate more nights.*
+
+Open the [Random Babies](http://www.rossmanchance.com/applets/randomBabies/RandomBabies.html) applet and press **Randomize**.
+Notice that the applet randomly returns babies to mothers and
+determines how many babies are returned to the correct home
+(by matching diaper colors). The applet also counts and
+graphs the resulting number of correct matches. Uncheck the
+**Animate** box and press **Randomize** a few more times. You
+should see the results accumulate in the table and the
+histogram. Click on the bar in the histogram representing the
+outcome of zero mothers receiving the correct baby. The
+graph on the right changes to a “time plot” of the proportion
+(relative frequency) of trials with 0 matches vs. the number of
+trials. Set the **Number of trials** to 100 and press **Randomize**
+a few times, noticing the behavior of the time plot.
+
+(h) Describe what you learn about how the (cumulative) proportion of trials that result in zero matches changes as you simulate more and more trials of this process. *The proportion bounces around for a while then settles down around $3/8 = 0.375$.*
+
+(i) After at least 1000 trials, what is your estimate for the probability that zero mothers receive their own
+baby? *Using 100,000 trials in the applet I obtained 0.3751.* However, there is no way really to reproduce the answer from the applet.
+
+```{r, label = "RBi"}
+nights <- 100000
+NumberCorrect <- numeric(nights)
+for(i in 1:nights){
+  shuffle <- sample(babies, size = 4, replace = FALSE)
+  NumberCorrect[i] <- sum(babies == shuffle)
+}
+xtabs(~NumberCorrect)
+TAsi <- xtabs(~NumberCorrect)/nights
+TAsi
+```
+*The R simulation with 100,000 trials/nights returns and estimated probability that zero mothers receive thier own baby of `r TAsi[1]`.*
+
+(j) Based on your answer to i., what is your estimate for the probability that at least one mother receives her own baby? Do all of your classmates obtain the same estimate? *The estimated probability that at least one mother receives her own baby is `r sum(TAsi[2:4])`.  Answers should be close to 0.625.*
+
+(k) Consider the table of Cumulative Results in the applet. One value for the number of matches is fairly unlikely, but does occur once in a while. Which outcome is this? *$P(X = 4) = 1/24$*
+
+(l) One outcome is actually impossible to occur. Which outcome is this? Explain why it is impossible. *It is impossible to get exactly 3 matches because once 3 out of four match, the fourth must also match.*
+
+(m) Calculate the average number of matches for your 1000 (or however many you performed) trials. [Hint: Use a weighted average ($\sum x_if_i)/N$ where $x_i$ is the number of matches and $f_i$ is the corresponding frequency, and $N$ is the number of repetitions you simulated.]
+
+```{r, label = "RBm"}
+TAsi
+EMS <- sum(TAsi * c(0, 1, 2, 4))
+EMS
+```
+
+The average number (answers will vary each time the simulation is run) of matches based on $`r nights`$ trials is `r EMS`.
+
+(n) Select the Average radio button above the time plot. Describe the behavior of this graph and comment on what it reveals about the (cumulative) behavior of the average number of matches over many trials (How does it look after 100 trials? After 1000 trials?). *The average number of matches varies for the first few trials then settles down around 1.*
+
+### Exact Mathematical Analysis
+One disadvantage to using simulation to estimate a probability like this is that everyone will potentially obtain a different estimate. Even with a very large number of trials, your result will still only be an estimate of the actual long-run probability. For this particular scenario however, we can determine exact theoretical probabilities.
+
+First, let’s list out all possible outcomes for returning four babies to their mothers at random. We can organize our work by letting 1234 represent the outcome where the first baby went to the first mother, the second baby to the second mother, the third baby to the third mother, and the fourth baby to the fourth mother. In this scenario, all four mothers get the correct baby. As another example, 1243 means that the first two mothers get the right baby, but the third and fourth mothers have their babies switched.
+ 
+**Definition**: A sample space is a list of all possible outcomes of a random process.
+
+(o) How many different outcomes are there for returning four babies to their mothers? What is each outcome’s probability of occurring for any trial? *There are `r n` possible outcomes for returning the four babies to their mothers.  The possible outcomes are stored in the variable `Omega`.  The probability of each outcome is 1/24.*
+
+```{r}
+Omega
+```
+
+(p) For each of the outcomes in `Omega`, indicate how many mothers get the correct baby. 
+
+```{r, label = "RBp"}
+# Exact answer through enumeration
+library(combinat)
+library(MASS)
+Omega <- permn(babies)
+n <- length(Omega) # 
+NumberCorrect <- numeric(n)
+for(i in 1:n){
+NumberCorrect[i] <- sum(Omega[[i]] == babies)
+}
+xtabs(~NumberCorrect)/n
+TA <- fractions(xtabs(~NumberCorrect)/n)
+TA
+```
+
+(q) In how many of the outcomes did zero mothers receive the correct baby? *Nine times zero mothers received the correct baby.*
+
+**Probability Rule**: When the outcomes in the sample space are equally likely, the probability of any one of a set of outcomes (an event) occurring is the number of outcomes in that set divided by the total number of outcomes in the sample space.
+
+(r) To calculate the exact probability of 0 matches, divide the number of outcomes with 0 matches by the total number of possible outcomes. How does this result compare to your estimate from the simulation? *$P(X = 0) = `r TA[1]`$ versus Simulation where $P(X = 0) = `r TAsi[1]`$.*
+
+(s) Use this method to determine the exact probabilities for each possible value for the number of matches. Express these probabilities as fractions and as decimals in the table below.
+
+```{r}
+TA
+FA
+```
+
+(t) What is the sum of these probabilities? Why does this make sense?
+*The sum of the probabilities is `r sum(FA)` which must be the case since these are all of the possibilities.*
+
+(u) What is the probability that at least one mother receives the correct baby? [Hint: Determine this two different ways: first by adding the probabilities of the corresponding values, and then by taking one minus the probability that this event does not happen.] How does this compare to the simulation results? *Theoretical $P(X \geq 1) = `r sum(TA[2:4])`.$ Simulation $P(X \geq 1) = `r sum(TAsi[2:4])`.$ The values are very close.*
+
+(v) Calculate the expected value of the number of matches. Comment on how it compares to the average value you obtained in the simulation. *The theoretical and simulated values are very close.*
+
+```{r, label = "RBv"}
+EMT <- sum(FA * c(0, 1, 2, 4)) #Expected match theoretical
+EMT
+EMS  # Expected match simulation
+PD <- abs(EMS - EMT)/EMT
+PD   # Percent difference
+```
+           
+(w) Is the expected value for the number of matches equal to the most probable outcome? If not, explain what is meant by an "expected" value. *No the expected number of matches is `r EMT` which does not equal the most probable outcome of 0.  The expected value is a weighted average which does not have to be a possible outcome.*
+
+(x) Calculate the variance of the number of matches. Also take the square root to calculate the standard deviation SD(X).
+
+```{r, label = "RBx"}
+px <- FA
+x <- c(0, 1, 2, 4)
+EX <- sum(x*px)
+EX
+VX <- sum((x - EX)^2*px)
+VX
+SX <- sqrt(VX)
+SX
+```
+
+(y) Confirm that the value of the standard deviation you calculating makes sense considering the possible outcomes for the random variable.
+
+
+**Discussion**: Notice that we have used two methods to answer questions about this random process:
+
+* Simulation – running the process under identical conditions a large number of times and seeing how often different outcomes occur
+* Exact mathematical calculations using basic rules of probability and counting
+
+This approach of looking at the analysis using both simulation and exact approaches will be a theme in this course. We will also consider some approximate mathematical models as well. You should consider these multiple approaches as a way to assess the appropriateness of each method. You should also be aware of situations where one method may be preferable to another and why.
