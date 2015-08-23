@@ -10,7 +10,7 @@
 
 <meta name="author" content="Alan Arnholt" />
 
-<meta name="date" content="2015-08-19" />
+<meta name="date" content="2015-08-23" />
 
 <title>Tentative Course Schedule STT 5811</title>
 
@@ -64,7 +64,7 @@ img {
 <div id="header">
 <h1 class="title">Tentative Course Schedule STT 5811</h1>
 <h4 class="author"><em>Alan Arnholt</em></h4>
-<h4 class="date"><em>2015-08-19</em></h4>
+<h4 class="date"><em>2015-08-23</em></h4>
 </div>
 
 
@@ -159,8 +159,52 @@ img {
 <li><p>To obtain updates from the upstream repository type</p>
 <pre><code>git pull upstream master</code></pre></li>
 <li><p>If there are conflicts, you will need to resolve them before proceeding.</p></li>
-<li><p>Submit ISCAM PR#1 (<em>Investigation B: Random Babies</em> parts i and o; <em>Investigation 1.1: Friend or Foe?</em> parts a, f, g, h, l, and m; RR chapters 1-2.)</p></li>
+<li><p>Submit ISCAM PR#1 (<em>Investigation B: Random Babies</em> parts i and o; <em>Investigation 1.1: Friend or Foe?</em> parts a, f, g, h, l, and m; RR chapters 1-2.) The direct link for the assignment is <a href="https://www.crowdgrader.org/crowdgrader/venues/view_venue/1274"><a href="https://www.crowdgrader.org/crowdgrader/venues/view_venue/1274" class="uri">https://www.crowdgrader.org/crowdgrader/venues/view_venue/1274</a></a>.</p></li>
 </ul>
+<div id="grading-rubric-for-iscam-rr-pr-assignments" class="section level4">
+<h4>Grading Rubric for ISCAM-RR-PR Assignments</h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Field</th>
+<th align="left">Excellent (3)</th>
+<th align="left">Competent (2)</th>
+<th align="left">Needs Work (1)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Reproducible</td>
+<td align="left">All graphs, code, and answers are created from text files. Answers are never hardcoded but instead are inserted using inline R code. sessionInfo() is provided at the end of the document as well as an automatically generated references section with properly formatted citations when appropriate.</td>
+<td align="left">All graphs, code, and answers are created from text files. Answers are hardcoded. No sessionInfo() is provided at the end of the document. References are present but not cited properly or automatically generated.</td>
+<td align="left">Document uses copy and paste with graphs or code. Answers are hardcoded and references when approapriate are hardcoded.</td>
+</tr>
+<tr class="even">
+<td align="left">Statistical Understanding</td>
+<td align="left">Answers to questions demonstrate clear statistical understanding by comparing theoretical answers to simulated answers. When hypotheses are tested, classical methods are compared and contrasted to randomization methods. When confidence intervals are constructed, classical approaches are compared and contrasted with bootstrap procedures. The scope of inferential conclusions made is appropriate for the sampling method.</td>
+<td align="left">Theoretical and simulated answers are computed but no discussion is present comparing and contrasting the results. When hypotheses are tested, results for classical and randomization methods are presented but are not compared and contrasted. When confidence intervals are constructed, classical and bootstrap approaches are computed but the results are not compared and contrasted. The scope of inferential conslcusions made is appropriate for the sampling method.</td>
+<td align="left">Theoretical and simulated answers are not computed correctly. No comparison between classical and randomization approaches is present when testing hypotheses. When confidence intervals are constructed, there is no comparison between classical and bootstrap confidence intervals .</td>
+</tr>
+<tr class="odd">
+<td align="left">Graphics</td>
+<td align="left">Graphs for categorical data (barplot, mosaic plot, etc.) have appropriately labeled axes and titles. Graphs for quantitative data (histograms, density plots, violin plots, etc.) have appropriately labeled axes and titles. Multivariate graphs use appropriate legends and labels. Computer variable names are replaced with descriptive variable names.</td>
+<td align="left">Appropriate graphs for the type of data are used. Not all axes have appropriate labels or computer variable names are used in the graphs.</td>
+<td align="left">Inappropriate graphs are used for the type of data. Axes are not labeled and computer variable names appear in the graphs.</td>
+</tr>
+<tr class="even">
+<td align="left">Coding</td>
+<td align="left">Code (primarily R) produces correct answers. Non-standard or complex functions are commented. Code is formatted using a consistent standard.</td>
+<td align="left">Code produces correct answers. Commenting is not used with non-standard and complex functions. No consistent code formatting is used.</td>
+<td align="left">Code does not produce correct answers. Code has no comments and is not formatted.</td>
+</tr>
+<tr class="odd">
+<td align="left">Clarity</td>
+<td align="left">Few errors of grammar and usage; any minor errors do not interfere with meaning. Language style and word choice are highly effective and enhance meaning. Style and word choice are appropriate for the assignment.</td>
+<td align="left">Some errors of grammar and usage; errors do not interfere with meaning. Language style and word choice are for the most part effective and appropriate for the assignment.</td>
+<td align="left">Major errors of grammar and usage make meaning unclear. Language style and word choice are ineffective and/or inappropriate.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Wednesday</strong></p>
 <ul>
 <li><p>Read chapter 3 of <a href="https://github.com/christophergandrud/Rep-Res-Book">Reproducible Research with R and RStudio</a>.</p></li>
@@ -173,6 +217,7 @@ img {
 <li><p>Discuss and finalize the week 4 (<strong>Research Plan Assignment (PR#2)</strong>) grading rubric.</p></li>
 </ul>
 </div>
+</div>
 <div id="week-3-aug-31-sep-2-4" class="section level3">
 <h3>Week 3 (Aug 31, Sep 2, 4)</h3>
 <p><strong>Monday</strong></p>
@@ -181,20 +226,45 @@ img {
 <li><p>Practice with <a href="http://www.crowdgrader.org/"><a href="http://www.crowdgrader.org/" class="uri">http://www.crowdgrader.org/</a></a>.</p></li>
 <li><p>Integrating <a href="www.zotero.com">zotero</a> with <a href="http://rmarkdown.rstudio.com">RMarkdown</a> will be discussed during the first part of the week. Example document will be stored in this folder.</p></li>
 <li><p>You may find these <a href="https://www.youtube.com/watch?v=dto4gARbsi0&amp;list=PLJBNI3mCp9g0wsSDK111qgimqVF1dwPXO">videos helpful</a>.</p></li>
-<li><p>Students will continue to work on the Literature Review / Citation assignment.</p></li>
-<li><p>Submit the <strong>Literature Review / Citation Assignment</strong> to <a href="http://www.crowdgrader.org"><a href="http://www.crowdgrader.org" class="uri">http://www.crowdgrader.org</a></a> no later than 5 pm Friday (Sep 4). The direct link for this assignment is <a href="http://www.crowdgrader.org/"><a href="http://www.crowdgrader.org/" class="uri">http://www.crowdgrader.org/</a></a></p></li>
-<li><p>In the YAML, use the title <strong>Literature Review / Citation Assignment</strong>, and leave the author field blank.</p>
-<pre><code>title: &quot;Literature Review / Citation Assignment&quot;
+<li><p>Students will continue to work on the Citation assignment.</p></li>
+<li><p>Submit the <strong>Citation Assignment</strong> to <a href="http://www.crowdgrader.org"><a href="http://www.crowdgrader.org" class="uri">http://www.crowdgrader.org</a></a> no later than 5 pm Friday (Sep 4). The direct link for this assignment is <a href="http://www.crowdgrader.org/"><a href="http://www.crowdgrader.org/" class="uri">http://www.crowdgrader.org/</a></a></p></li>
+<li><p>In the YAML, use the title <strong>Citation Assignment</strong>, and leave the author field blank.</p>
+<pre><code>title: &quot;Citation Assignment&quot;
 author: </code></pre></li>
 </ul>
-<div id="grading-rubric-for-literature-review-citation-assignment-pr1" class="section level4">
-<h4>Grading Rubric for <strong>Literature Review / Citation Assignment</strong> (PR#1)</h4>
-<ol style="list-style-type: decimal">
-<li><p>Does the document open without problems? Is the grammar and punctuation acceptable? 0/1</p></li>
-<li><p>How convincing is the written document that further work can be performed on the chosen topic? 0/1</p></li>
-<li><p>Does the author have at least five references? 0/1</p></li>
-</ol>
-<p>A well-written paper that convinces you the author has reviewed the literature, has a topic that will expand the knowledge in the area, and has used at least five references should receive a 3. A submission that satisfies two of the three criteria perfectly or most but not all of the three criteria should receive a 2. A submission that satisfies only one of the three criteria should receive a 1. If the submission does not render or the submitter did not submit the correct assignment, they should receive a 0.</p>
+<div id="grading-rubric-for-citation-assignment-pr1" class="section level4">
+<h4>Grading Rubric for <strong>Citation Assignment</strong> (PR#1)</h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Field</th>
+<th align="left">Excellent</th>
+<th align="left">Competent</th>
+<th align="left">Needs Work</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Document (<em>.html) opens without issue and was created using an </em>Rmd file</td>
+<td align="left">Document opens without issue and no author name is present (1)</td>
+<td align="left">Document opens but author’s name is visible (0.7)</td>
+<td align="left">Document does not open (0.1)</td>
+</tr>
+<tr class="even">
+<td align="left">Clarity</td>
+<td align="left">Few errors of grammar and usage; any minor errors do not interfere with meaning. Language style and word choice are highly effective and enhance meaning. Style and word choice are appropriate for the assignment. (1)</td>
+<td align="left">Some errors of grammar and usage; errors do not interfere with meaning. Language style and word choice are for the most part effective and appropriate for the assignment. (0.7)</td>
+<td align="left">Major errors of grammar and usage make meaning unclear. Language style and word choice are ineffective and/or inappropriate. (0.1)</td>
+</tr>
+<tr class="odd">
+<td align="left">Sources</td>
+<td align="left">five or more sources less than 10 years old — references are automatically generated from a Zotero BibTeX file (1)</td>
+<td align="left">two or more sources less than 10 years old — references are automatically generated from a Zotero BibTeX file (0.7)</td>
+<td align="left">fewer than two sources that are less than 10 years old — references are not automatically generated from a Zotero BibTeX file (0.1)</td>
+</tr>
+</tbody>
+</table>
+<p>A well-written paper (without a visible name) that convinces you the author has reviewed the literature, has a topic that will expand the knowledge in the area, and has used at least five references (less than 10 years old—preferably less than five years old—automatically generated from a Zotero BibTeX file) should receive a 3.</p>
 <ul>
 <li>Submit ISCAM PR#2.</li>
 </ul>
