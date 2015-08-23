@@ -9,25 +9,35 @@ General Notes:
 
 1.  Direct links for [CrowdGrader](http://www.crowdgrader.org/) assignments will be updated during the course.
 
-2.  All due dates are 5 PM Friday for PDS CrowdGrader assignments and 5 PM Tuesdays for ISCAMIII CrowdGrader assignments.
+2.  All due dates are 5 PM Friday for `PDS-PR` CrowdGrader assignments and 5 PM Tuesdays for `ISCAM-RR-PR` CrowdGrader assignments.
 
-3.  All PDS CrowdGrader peer reviews must be completed by 11 PM on Tuesdays and all ISCAMIII peer reviews must be completed by 11 PM on Saturdays.
+3.  All `PDS-PR` CrowdGrader peer reviews must be completed by 11 PM on Tuesdays and all `ISCAM-RR-PR` peer reviews must be completed by 11 PM on Saturdays.
 
-4.  Peer review feedback will close at 8 AM Wednesdays for PDS CrowdGrader assignments and 8 AM Mondays for ISCAMIII CrowdGrader assignments.
+4.  Peer review feedback will close at 8 AM Wednesdays for `PDS-PR` CrowdGrader assignments and 8 AM Mondays for `ISCAM-RR-PR` CrowdGrader assignments.
 
-5. The class will update the grading rubrics for the PDS assignments two weeks prior to each due date (for STT 2810).
+5. The class will update the grading rubrics for the `PDS-PR` assignments two weeks prior to each due date (for STT 2810).
 
-6. Mondays will be devoted to material in PDS, and Wednesdays and Fridays will be devoted to investigations from ISCAMIII.
+6. Mondays will be devoted to material in PDS, and Wednesdays and Fridays will be devoted to investigations from ISCAM III.
 
-7. Directions for all **ISCAM PR#** submissions:
+7. Directions for all **ISCAM-RR-PR** submissions:
 
-  a. All submissions must be in R markdown.
+  a. All submissions must be written with R markdown.
   b. Write out all questions you are assigned to answer from ISCAM III.
   c. Bold or italicize your answers.  
   d. Answer all assigned ISCAM III questions by implementing simulations,   exact answers, etc. with `R`.  
-  e. Write a one paragraph summary ($\leq 1$ page) on what you read    in the previous week's assignment in *Reproducible Research with R and RStudio* including what you found most immediately useful or what   could have been useful to you in the past.
+  e. Write a one paragraph summary ($\leq 1$ page) on what you read in the previous week's assignment in *Reproducible Research with R and RStudio* including what you found most immediately useful or what could have been useful to you in the past.
   
-8.  The grading rubric for all **ISCAM PR#** submissions can be found in the [grubric](https://github.com/STAT-ATA-ASU/STT5811ClassRepo/tree/master/grubric) directory.  
+8.  The grading rubric for all **ISCAM-RR-PR#** submissions can be found in the [grubric](https://github.com/STAT-ATA-ASU/STT5811ClassRepo/tree/master/grubric) directory and below. 
+
+#### Grading Rubric for **ISCAM-RR-PR** Assignments
+
+Field | Excellent (3) | Competent (2)  | Needs Work (1)
+------|---------------|----------------|---------------
+Reproducible | All graphs, code, and answers are created from text files.  Answers are never hardcoded but instead are inserted using inline R code. sessionInfo() is provided at the end of the document as well as an automatically generated references section with properly formatted citations when appropriate. | All graphs, code, and answers are created from text files.  Answers are  hardcoded. No sessionInfo() is provided at the end of the document. References are present but not cited properly or automatically generated. | Document uses copy and paste with graphs or code.  Answers are hardcoded and references when approapriate are hardcoded.
+Statistical Understanding | Answers to questions demonstrate clear statistical understanding by comparing theoretical answers to simulated answers.  When hypotheses are tested, classical methods are compared and contrasted to randomization methods.  When confidence intervals are constructed, classical approaches are compared and contrasted with bootstrap procedures.  The scope of inferential conclusions made is appropriate for the sampling method. | Theoretical and simulated answers are computed but no discussion is present comparing and contrasting the results.  When hypotheses are tested, results for classical and randomization methods are presented but are not compared and contrasted.  When confidence intervals are constructed, classical and bootstrap approaches are computed but the results are not compared and contrasted.  The scope of inferential conslcusions made is appropriate for the sampling method. | Theoretical and simulated answers are not computed correctly.  No comparison between classical and randomization approaches is present when testing hypotheses.  When confidence intervals are constructed, there is no comparison between classical and bootstrap confidence intervals .
+Graphics | Graphs for categorical data (barplot, mosaic plot, etc.) have appropriately labeled axes and titles.  Graphs for quantitative data (histograms, density plots, violin plots, etc.) have appropriately labeled axes and titles.  Multivariate graphs use appropriate legends and labels.  Computer variable names are replaced with descriptive variable names. | Appropriate graphs for the type of data are used.  Not all axes have appropriate labels or computer variable names are used in the graphs. | Inappropriate graphs are used for the type of data.  Axes are not labeled and computer variable names appear in the graphs.
+Coding  | Code (primarily R) produces correct answers.  Non-standard or complex functions are commented.  Code is formatted using a consistent standard. | Code produces correct answers.  Commenting is not used with non-standard and complex functions.  No consistent code formatting is used. | Code does not produce correct answers.  Code has no comments and is not formatted.
+Clarity  | Few errors of grammar and usage; any minor errors do not interfere with meaning.  Language style and word choice are highly effective and enhance meaning.  Style and word choice are appropriate for the assignment. | Some errors of grammar and usage; errors do not interfere with meaning.  Language style and word choice are for the most part effective and appropriate for the assignment. | Major errors of grammar and usage make meaning unclear.  Language style and word choice are ineffective and/or inappropriate.
 
 ### Week 1: (Aug 17, 19, 21)
 
@@ -74,13 +84,13 @@ Watch the following videos:
 
 * Read and Complete *Investigation B: Random Babies* from ISCAMIII prior to class.
 
-* Submit at least one suggestion for improving the week 3 (**Literature Review / Citation  Assignment (PR#1)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+* Submit at least one suggestion for improving the week 3 (**Citation  Assignment (PR#1)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
 
 **Friday**
 
 * Read and Complete *Investigation 1.1: Friend or Foe?* from ISCAMIII prior to class.
 
-* Discuss and finalize the week 3 (**Literature Review / Citation  Assignment (PR#1)**) grading rubric.
+* Discuss and finalize the week 3 (**Citation  Assignment (PR#1)**) grading rubric.
 
 ### Week 2: (Aug 24, 26, 28)
 
@@ -124,17 +134,8 @@ git pull upstream master
 ```
 * If there are conflicts, you will need to resolve them before proceeding.
 
-* Submit ISCAM PR#1 (*Investigation B: Random Babies* parts i and o; *Investigation 1.1: Friend or Foe?* parts a, f, g, h, l, and m; RR chapters 1-2.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1274](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1274).
+* Submit ISCAM PR#1 NLT 23:00 8/25/15 (*Investigation B: Random Babies* parts i and o; *Investigation 1.1: Friend or Foe?* parts a, f, g, h, l, and m; RR chapters 1-2.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1274](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1274).
 
-#### Grading Rubric for ISCAM-RR-PR Assignments
-
-Field | Excellent (3) | Competent (2)  | Needs Work (1)
-------|---------------|----------------|---------------
-Reproducible | All graphs, code, and answers are created from text files.  Answers are never hardcoded but instead are inserted using inline R code. sessionInfo() is provided at the end of the document as well as an automatically generated references section with properly formatted citations when appropriate. | All graphs, code, and answers are created from text files.  Answers are  hardcoded. No sessionInfo() is provided at the end of the document. References are present but not cited properly or automatically generated. | Document uses copy and paste with graphs or code.  Answers are hardcoded and references when approapriate are hardcoded.
-Statistical Understanding | Answers to questions demonstrate clear statistical understanding by comparing theoretical answers to simulated answers.  When hypotheses are tested, classical methods are compared and contrasted to randomization methods.  When confidence intervals are constructed, classical approaches are compared and contrasted with bootstrap procedures.  The scope of inferential conclusions made is appropriate for the sampling method. | Theoretical and simulated answers are computed but no discussion is present comparing and contrasting the results.  When hypotheses are tested, results for classical and randomization methods are presented but are not compared and contrasted.  When confidence intervals are constructed, classical and bootstrap approaches are computed but the results are not compared and contrasted.  The scope of inferential conslcusions made is appropriate for the sampling method. | Theoretical and simulated answers are not computed correctly.  No comparison between classical and randomization approaches is present when testing hypotheses.  When confidence intervals are constructed, there is no comparison between classical and bootstrap confidence intervals .
-Graphics | Graphs for categorical data (barplot, mosaic plot, etc.) have appropriately labeled axes and titles.  Graphs for quantitative data (histograms, density plots, violin plots, etc.) have appropriately labeled axes and titles.  Multivariate graphs use appropriate legends and labels.  Computer variable names are replaced with descriptive variable names. | Appropriate graphs for the type of data are used.  Not all axes have appropriate labels or computer variable names are used in the graphs. | Inappropriate graphs are used for the type of data.  Axes are not labeled and computer variable names appear in the graphs.
-Coding  | Code (primarily R) produces correct answers.  Non-standard or complex functions are commented.  Code is formatted using a consistent standard. | Code produces correct answers.  Commenting is not used with non-standard and complex functions.  No consistent code formatting is used. | Code does not produce correct answers.  Code has no comments and is not formatted.
-Clarity  | Few errors of grammar and usage; any minor errors do not interfere with meaning.  Language style and word choice are highly effective and enhance meaning.  Style and word choice are appropriate for the assignment. | Some errors of grammar and usage; errors do not interfere with meaning.  Language style and word choice are for the most part effective and appropriate for the assignment. | Major errors of grammar and usage make meaning unclear.  Language style and word choice are ineffective and/or inappropriate.
 
 **Wednesday**
 
