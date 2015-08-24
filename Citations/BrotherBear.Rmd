@@ -1,0 +1,14 @@
+---
+title: "Brother Bear"
+author: "Sitka"
+date: "8/24/2015"
+output: html_document
+bibliography: BrotherBear.bib
+nocite: |
+  @abadie_dysgenesis_2010
+csl: nature.csl 
+---
+
+I am curious to see what my little brother Kenai has been doing lately.  It seems he developed a tool [@arnholt_third_2002] that is more sophisticated than my gerber knife shown below. ![mygerber](mygerber.jpg)  Kenai did some great fantastic facial reconstruction [@lopez_safety_2007] while he was in theater.  Keep up the good work little brother. 
+
+# References
