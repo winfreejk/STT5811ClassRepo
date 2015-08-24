@@ -3,14 +3,18 @@ title: "Brother Bear"
 author: "Sitka"
 date: "8/24/2015"
 output: html_document
-bibliography: BrotherBear.bib
 nocite: |
   @abadie_dysgenesis_2010
-csl: nature.csl 
+csl: nature.csl
+bibliography: BrotherBear.bib
 ---
 
 ## Main Text
-I am curious to see what my little brother Kenai has been doing lately.  It seems he developed a tool [@arnholt_third_2002] that is more sophisticated than my gerber knife shown below. ![mygerber](mygerber.jpg)  Kenai did some fantastic facial reconstruction [@lopez_safety_2007] while he was deployed.  Keep up the good work little brother! 
+I am curious to see what my little brother Kenai has been doing lately.  It seems he developed a tool [@arnholt_third_2002] that is more sophisticated than my gerber knife shown below. 
+
+![mygerber](gerber5.png)  
+
+Kenai did some fantastic facial reconstruction [@lopez_safety_2007] while he was deployed.  Keep up the good work little brother! 
 
 ## Notes
 If you want to change the citation style language (csl) pass a different argument to  `csl` in the YAML.  Different `csl` files for zotero can be downloaded from [https://www.zotero.org/styles](https://www.zotero.org/styles).
@@ -53,7 +57,7 @@ $$\int_{85}^{115} \frac{1}{\sqrt{2\pi 15^2}}e^\frac{(x - 100)^2}{2\times 15^2}\,
 
 ## A Graph?
 
-```{r, label = "Agraph", message = FALSE, fig.align = 'center'}
+```{r, label = "Agraph", message = FALSE, fig.align = 'left'}
 library(PASWR2)
 normarea(85, 115, 100, 15)
 ```
