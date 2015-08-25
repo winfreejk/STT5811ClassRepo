@@ -5,7 +5,7 @@ date: "8/24/2015"
 output: html_document
 nocite: |
   @abadie_dysgenesis_2010
-csl: nature.csl
+csl: apa.csl
 bibliography: BrotherBear.bib
 ---
 
