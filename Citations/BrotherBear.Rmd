@@ -2,7 +2,7 @@
 title: "Brother Bear"
 author: "Sitka"
 date: "8/24/2015"
-output: pdf_document
+output: html_document
 nocite: |
   @abadie_dysgenesis_2010
 csl: apa.csl
