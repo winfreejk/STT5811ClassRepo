@@ -10,9 +10,9 @@ bibliography: BrotherBear.bib
 ---
 
 ## Main Text
-I am curious to see what my little brother Kenai has been doing lately.  It seems he developed a tool [@arnholt_third_2002] that is more sophisticated than my gerber knife shown below. 
+I am curious to see what my little brother Kenai has been doing lately.  It seems he developed a tool [@arnholt_third_2002] that is more sophisticated than my leatherman knife shown below. 
 
-![mygerber](gerber5.png)  
+![myleatherman](leatherman.jpg)  
 
 Kenai did some fantastic facial reconstruction [@lopez_safety_2007] while he was deployed.  Keep up the good work little brother! 
 
