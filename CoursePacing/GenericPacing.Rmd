@@ -2,32 +2,42 @@
 title: "Tentative Course Schedule STT 5811"
 author: "Alan Arnholt"
 date: '`r Sys.Date()`'
-output: pdf_document
+output: html_document
 ---
 
 General Notes:
 
 1.  Direct links for [CrowdGrader](http://www.crowdgrader.org/) assignments will be updated during the course.
 
-2.  All due dates are 5 PM Friday for PDS CrowdGrader assignments and 5 PM Tuesdays for ISCAMIII CrowdGrader assignments.
+2.  All due dates are 5 PM Friday for `PDS-PR` CrowdGrader assignments and 5 PM Tuesdays for `ISCAM-RR-PR` CrowdGrader assignments.
 
-3.  All PDS CrowdGrader peer reviews must be completed by 11 PM on Tuesdays and all ISCAMIII peer reviews must be completed by 11 PM on Saturdays.
+3.  All `PDS-PR` CrowdGrader peer reviews must be completed by 11 PM on Tuesdays and all `ISCAM-RR-PR` peer reviews must be completed by 11 PM on Saturdays.
 
-4.  Peer review feedback will close at 8 AM Wednesdays for PDS CrowdGrader assignments and 8 AM Mondays for ISCAMIII CrowdGrader assignments.
+4.  Peer review feedback will close at 8 AM Wednesdays for `PDS-PR` CrowdGrader assignments and 8 AM Mondays for `ISCAM-RR-PR` CrowdGrader assignments.
 
-5. The class will update the grading rubrics for the PDS assignments two weeks prior to each due date (for STT 2810).
+5. The class will update the grading rubrics for the `PDS-PR` assignments two weeks prior to each due date (for STT 2810).
 
-6. Mondays will be devoted to material in PDS, and Wednesdays and Fridays will be devoted to investigations from ISCAMIII.
+6. Mondays will be devoted to material in PDS, and Wednesdays and Fridays will be devoted to investigations from ISCAM III.
 
-7. Directions for all **ISCAM PR#** submissions:
+7. Directions for all **ISCAM-RR-PR** submissions:
 
-  a. All submissions must be in R markdown.
+  a. All submissions must be written with R markdown.
   b. Write out all questions you are assigned to answer from ISCAM III.
   c. Bold or italicize your answers.  
   d. Answer all assigned ISCAM III questions by implementing simulations,   exact answers, etc. with `R`.  
-  e. Write a one paragraph summary ($\leq 1$ page) on what you read    in the previous week's assignment in *Reproducible Research with R and RStudio* including what you found most immediately useful or what   could have been useful to you in the past.
+  e. Write a one paragraph summary ($\leq 1$ page) on what you read in the previous week's assignment in *Reproducible Research with R and RStudio* including what you found most immediately useful or what could have been useful to you in the past.
   
-8.  The grading rubric for all **ISCAM PR#** submissions can be found in the [grubric](https://github.com/STAT-ATA-ASU/STT5811ClassRepo/tree/master/grubric) directory.  
+8.  The grading rubric for all **ISCAM-RR-PR#** submissions can be found in the [grubric](https://github.com/STAT-ATA-ASU/STT5811ClassRepo/tree/master/grubric) directory and below. 
+
+#### Grading Rubric for **ISCAM-RR-PR** Assignments
+
+Field | Excellent (3) | Competent (2)  | Needs Work (1)
+------|---------------|----------------|---------------
+Reproducible | All graphs, code, and answers are created from text files.  Answers are never hardcoded but instead are inserted using inline R code. sessionInfo() is provided at the end of the document as well as an automatically generated references section with properly formatted citations when appropriate. | All graphs, code, and answers are created from text files.  Answers are  hardcoded. No sessionInfo() is provided at the end of the document. References are present but not cited properly or automatically generated. | Document uses copy and paste with graphs or code.  Answers are hardcoded and references when approapriate are hardcoded.
+Statistical Understanding | Answers to questions demonstrate clear statistical understanding by comparing theoretical answers to simulated answers.  When hypotheses are tested, classical methods are compared and contrasted to randomization methods.  When confidence intervals are constructed, classical approaches are compared and contrasted with bootstrap procedures.  The scope of inferential conclusions made is appropriate for the sampling method. | Theoretical and simulated answers are computed but no discussion is present comparing and contrasting the results.  When hypotheses are tested, results for classical and randomization methods are presented but are not compared and contrasted.  When confidence intervals are constructed, classical and bootstrap approaches are computed but the results are not compared and contrasted.  The scope of inferential conslcusions made is appropriate for the sampling method. | Theoretical and simulated answers are not computed correctly.  No comparison between classical and randomization approaches is present when testing hypotheses.  When confidence intervals are constructed, there is no comparison between classical and bootstrap confidence intervals .
+Graphics | Graphs for categorical data (barplot, mosaic plot, etc.) have appropriately labeled axes and titles.  Graphs for quantitative data (histograms, density plots, violin plots, etc.) have appropriately labeled axes and titles.  Multivariate graphs use appropriate legends and labels.  Computer variable names are replaced with descriptive variable names. | Appropriate graphs for the type of data are used.  Not all axes have appropriate labels or computer variable names are used in the graphs. | Inappropriate graphs are used for the type of data.  Axes are not labeled and computer variable names appear in the graphs.
+Coding  | Code (primarily R) produces correct answers.  Non-standard or complex functions are commented.  Code is formatted using a consistent standard. | Code produces correct answers.  Commenting is not used with non-standard and complex functions.  No consistent code formatting is used. | Code does not produce correct answers.  Code has no comments and is not formatted.
+Clarity  | Few errors of grammar and usage; any minor errors do not interfere with meaning.  Language style and word choice are highly effective and enhance meaning.  Style and word choice are appropriate for the assignment. | Some errors of grammar and usage; errors do not interfere with meaning.  Language style and word choice are for the most part effective and appropriate for the assignment. | Major errors of grammar and usage make meaning unclear.  Language style and word choice are ineffective and/or inappropriate.
 
 ### Week 1: (Aug 17, 19, 21)
 
@@ -74,13 +84,13 @@ Watch the following videos:
 
 * Read and Complete *Investigation B: Random Babies* from ISCAMIII prior to class.
 
-* Submit at least one suggestion for improving the week 3 (**Literature Review / Citation  Assignment (PR#1)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
+* Submit at least one suggestion for improving the week 3 (**Citation  Assignment (PR#1)**) grading rubric on [piazza](https://piazza.com/class/ida59td3ddq3zi) prior to class.
 
 **Friday**
 
 * Read and Complete *Investigation 1.1: Friend or Foe?* from ISCAMIII prior to class.
 
-* Discuss and finalize the week 3 (**Literature Review / Citation  Assignment (PR#1)**) grading rubric.
+* Discuss and finalize the week 3 (**Citation  Assignment (PR#1)**) grading rubric.
 
 ### Week 2: (Aug 24, 26, 28)
 
@@ -105,14 +115,14 @@ Watch the following videos:
 1. Fork the repository.
 2. Copy the clone URL to the clipboard.
 3. Click `File > New Project > Version Control > Git`
-4. Paste the clone URL (`https://github.com/YourUserName/STAT-ATA-ASU/STT2810ClassRepo.git`) in the `Repository URL:` box.
-5. Type a name (suggestion `UserNameSTT2810`) in the `Project directory name:` box.
+4. Paste the clone URL (`https://github.com/YourUserName/STAT-ATA-ASU/STT5811ClassRepo.git`) in the `Repository URL:` box.
+5. Type a name (suggestion `UserNameSTT5811`) in the `Project directory name:` box.
 6. Change if needed the location in the `Create project as subdirectory of:` box.
 7. Click the `Create Project` box.  You should now have a local copy of the forked repository on your local machine.  Congratulations!  
 
 * Set the upstream remote in your fork to this repository with the command
 ```
-git remote add upstream https://github.com/STAT-ATA-ASU/STT2810ClassRepo.git
+git remote add upstream https://github.com/STAT-ATA-ASU/STT5811ClassRepo.git
 ```
 * Verify with
 ```
@@ -124,7 +134,8 @@ git pull upstream master
 ```
 * If there are conflicts, you will need to resolve them before proceeding.
 
-* Submit ISCAM PR#1 (*Investigation B: Random Babies* parts i and o; *Investigation 1.1: Friend or Foe?* parts a, f, g, h, l, and m; RR chapters 1-2.)
+* Submit ISCAM PR#1 NLT 23:00 8/25/15 (*Investigation B: Random Babies* parts i and o; *Investigation 1.1: Friend or Foe?* parts a, f, g, h, l, and m; RR chapters 1-2.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1274](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1274).
+
 
 **Wednesday**
 
@@ -153,27 +164,29 @@ git pull upstream master
 * You may find these [videos helpful](https://www.youtube.com/watch?v=dto4gARbsi0&list=PLJBNI3mCp9g0wsSDK111qgimqVF1dwPXO).
 
 
-* Students will continue to work on the Literature Review / Citation assignment.
+* Students will continue to work on the Citation assignment.
 
-* Submit the **Literature Review / Citation Assignment** to [http://www.crowdgrader.org](http://www.crowdgrader.org) no later than 5 pm Friday (Sep 4).  The direct link for this assignment is [http://www.crowdgrader.org/](http://www.crowdgrader.org/)
+* Submit the **Citation Assignment** to [http://www.crowdgrader.org](http://www.crowdgrader.org) no later than 5 pm Friday (Sep 4).  The direct link for this assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1296](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1296)
 
-* In the YAML, use the title **Literature Review / Citation Assignment**, and leave the author field blank. 
+* In the YAML, use the title **Citation Assignment**, and leave the author field blank. 
 ```
-title: "Literature Review / Citation Assignment"
+title: "Citation Assignment"
 author: 
 ```
 
-#### Grading Rubric for **Literature Review / Citation Assignment** (PR#1)
 
-1. Does the document open without problems?  Is the grammar and punctuation acceptable? 0/1
+#### Grading Rubric for **Citation Assignment** (PR#1)
 
-2. How convincing is the written document that further work can be performed on the chosen topic? 0/1
+Field      | Excellent          |  Competent      |  Needs Work
+-----------|--------------------|-----------------|-------------------
+Document (*.html) opens without issue and was created using an *Rmd file | Document opens without issue and no author name is present (1) | Document opens but author's name is visible (0.7) | Document does not open (0.1)
+Clarity | Few errors of grammar and usage; any minor errors do not interfere with meaning.  Language style and word choice are highly effective and enhance meaning.  Style and word choice are appropriate for the assignment. (1) | Some errors of grammar and usage; errors do not interfere with meaning.  Language style and word choice are for the most part effective and appropriate for the assignment. (0.7)  | Major errors of grammar and usage make meaning unclear.  Language style and word choice are ineffective and/or inappropriate. (0.1) 
+Sources | five or more sources less than 10 years old --- references are automatically generated from a Zotero BibTeX file (1) | two or more sources less than 10 years old --- references are automatically generated from a Zotero BibTeX file (0.7) | fewer than two sources that are less than 10 years old --- references are not automatically generated from a Zotero BibTeX file (0.1)
 
-3. Does the author have at least five references? 0/1
 
-A well-written paper that convinces you the author has reviewed the literature, has a topic that will expand the knowledge in the area, and has used at least five references should receive a 3.  A submission that satisfies two of the three criteria perfectly or most but not all of the three criteria should receive a 2.  A submission that satisfies only one of the three criteria should receive a 1.  If the submission does not render or the submitter did not submit the correct assignment, they should receive a 0.
+A well-written paper (without a visible name) that convinces you the author has reviewed the literature, has a topic that will expand the knowledge in the area, and has used at least five references (less than 10 years old---preferably less than five years old---automatically generated from a Zotero BibTeX file) should receive a 3.
 
-* Submit ISCAM PR#2.
+* Submit ISCAM PR#2 NLT 23:00 8/25/15 (*Investigation 1.2: Do Names Match Faces?* parts c (use $n = 22$ and assume 16 favored the left picture), d, k, l, m, n; *Investigation 1.3: Heart Transplant Mortality* parts h, i, j, l and m; RR chapter 3.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1295](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1295).
 
 **Wednesday**
 
@@ -195,25 +208,24 @@ A well-written paper that convinces you the author has reviewed the literature, 
 
 * Read/review Chapters 4-5 of PDS as needed.  
 * Work on **Research Plan Assignment** PDS.
-* Peer reviews for **Literature Review / Citation Assignment** are due NLT 11 PM Tuesday.
+* Peer reviews for **Citation Assignment** are due NLT 11 PM Tuesday.
 * **Research Plan Assignment** PDS is due NLT 5 PM Friday (Sep 11).  
          
 
 #### Grading Rubric for **Research Plan Assignment** (PR#2)
 
-1.	Does the document open without problems?  (0.25)
-2.	Is the grammar and punctuation acceptable?  (0.25)
-3.	Is the title a concise statement of the main topic?  (0.25)
-4.	Does the title identify the actual variables under investigation and the relationship between them? (0.25)
-5.	 Does the introduction describe the question the author intends to investigate and how their research relates to other work in the field?  (0.25)
-6.	Does the literature review justify the proposed research by identifying a hole in existing scholarship?  (0.25)
-7.	Does the introduction build to and conclude with the research questions or study objectives the author proposes to address?  (0.25)
-8.	Is the literature review supported with at least five citations? (0.25) 
-9.	Is there a **Methods** section that describes how the research was conducted?  (0.25)
-10.	Does the **Methods** section include a discussion of the _sample_, _measures_, and _procedures_. (0.50)
-11.	Is there an **Implications/Predicted Results** section that discusses real implications linked to possible results? (0.25)
+Field      | Excellent          |  Competent      |  Needs Work
+-----------|--------------------|-----------------|-------------------
+Document (*.html) opens without issue and was created using an *Rmd file | Document opens without issue and no author name is present (0.6) | Document opens but author's name is visible (0.4) | Document does not open (0.1)
+Clarity | Few errors of grammar and usage; any minor errors do not interfere with meaning.  Language style and word choice are highly effective and enhance meaning.  Style and word choice are appropriate for the assignment. The title is a concise statement of the main topic that identifies the actual variables under investigation and the relationship between them. (0.6) | Some errors of grammar and usage; errors do not interfere with meaning.  Language style and word choice are for the most part effective and appropriate for the assignment.  The title is not a concise statement of the main topic or does not identify the variables under investigation and the relationship between them (0.4)  | Major errors of grammar and usage make meaning unclear.  Language style and word choice are ineffective and/or inappropriate.  The title is does not identify the variables under investigation of the relationship between them (0.1) 
+Introduction | The introduction describes the question the author intends to investigate and how their research relates to other work in the field.  The literature review justifies the proposed research by identifying a hole in existing scholarship. (0.6) |  The introduction describes the question the author intends to investigate and how their research relates to other work in the field.  The literature review does not justify the proposed research by identifying a hole in existing scholarship. (0.4) | The introduction does not describe the proposed research or identify a hole in existing research. (0.1)
+Organization | There is a **Methods** section that describes how the research was conducted with discussion of the _sample_, _measures_, and _procedures_.  There is an **Implications/Predicted Results** section that discusses real implications linked to possible results. (0.6) | There is a **Methods** section that describes how the research was conducted but no discussion of the _sample_, _measures_, and _procedures_.  There is an **Implications/Predicted Results** but no discussion of real implications linked to possible results. (0.4) | The **Methods** and **Implications/Predicted Results** sections are missing. (0.1)
+Sources | five or more sources less than 10 years old --- references are automatically generated from a Zotero BibTeX file (0.6) | two or more sources less than 10 years old --- references are automatically generated from a Zotero BibTeX file (0.4) | fewer than two sources that are less than 10 years old --- references are not automatically generated from a Zotero BibTeX file (0.1)
 
-A well-written paper that convinces you the author can fill a gap in the existing scholarship, has a title that is a concise statement of the main topic and identifies the actual variables under investigation and the relationship between them, has an introduction supported with at least five references, has a Methods section that describes the sample, measures, and procedures, and has a section that discusses real implications linked to possible results should receive a 3.  A submission that satisfies two of the three criteria perfectly or most but not all of the three criteria should receive a 2.  A submission that satisfies only one of the three criteria should receive a 1.  If the submission does not render or the submitter did not submit the correct assignment, they should receive a 0.
+
+
+
+A well-written paper that convinces you the author can fill a gap in the existing scholarship, has a title that is a concise statement of the main topic and identifies the actual variables under investigation and the relationship between them, has an introduction supported with at least five references, has a Methods section that describes the sample, measures, and procedures, and has a section that discusses real implications linked to possible results should receive a 3.  If the submission does not render or the submitter did not submit the correct assignment, they should receive a 0.
 
 * Submit ISCAM PR#3.
 
