@@ -227,7 +227,7 @@ Sources | five or more sources less than 10 years old --- references are automat
 
 A well-written paper that convinces you the author can fill a gap in the existing scholarship, has a title that is a concise statement of the main topic and identifies the actual variables under investigation and the relationship between them, has an introduction supported with at least five references, has a Methods section that describes the sample, measures, and procedures, and has a section that discusses real implications linked to possible results should receive a 3.  If the submission does not render or the submitter did not submit the correct assignment, they should receive a 0.
 
-* Submit ISCAM PR#3.
+* Submit ISCAM PR#3 NLT 23:00 9/8/15 (*Investigation 1.4: Kissing The Right Way* parts g, h, and j; *Investigation 1.5: Kissing The Right Way (cont.)* parts c, d, and e; RR chapter 4.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1327](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1327).
 
 **Wednesday**
 
@@ -274,6 +274,7 @@ A well-written paper that convinces you the author can fill a gap in the existin
 * Discuss and finalize the week 8 **Bivariate Graphing Assignment (PR#5)** grading rubric.
 * After action review of **Research Plan Assignment (PR#2)**.
 
+
 ### Week 6: (Sep 21, 23, 25)
 
 **Monday**
@@ -290,28 +291,6 @@ A well-written paper that convinces you the author can fill a gap in the existin
 
 3. Are original variables recoded to readable names and numeric values recoded appropriately? 0/1
 
-
-* Push your "Research Proposal" to your private repository NLT 5 PM Friday (Sep 27) and resulting `*.html` files.
-
-I will use the same grading rubric (below) you used in the peer evaluation phase of the research proposals.  I will also check to make sure the document compiles based on the `*.Rmd` and `*.bib` files in your **Research Proposal** folder.  
-
-#### Grading Rubric for **Research Proposal**
-
-1.	Does the document open without problems?  (0.25)
-2.	Is the grammar and punctuation acceptable?  (0.25)
-3.	Is the title a concise statement of the main topic?  (0.25)
-4.	Does the title identify the actual variables under investigation and the relationship between them? (0.25)
-5.	 Does the introduction describe the question the author intends to investigate and how their research relates to other work in the field?  (0.25)
-6.	Does the literature review justify the proposed research by identifying a hole in existing scholarship?  (0.25)
-7.	Does the introduction build to and conclude with the research questions or study objectives the author proposes to address?  (0.25)
-8.	Is the literature review supported with at least five citations? (0.25) 
-9.	Is there a **Methods** section which describes how the research was conducted?  (0.25)
-10.	Does the **Methods** section include a discussion of the _sample_, _measures_, and _procedures_. (0.50)
-11.	Is there an **Implications/Predicted Results** section that discusses real implications linked to possible results? (0.25)
-
-
-A well-written paper that convinces you the author can fill a gap in the existing scholarship, has a title that is a concise statement of the main topic and identifies the actual variables under investigation and the relationship between them, has an introduction supported with at least five references, has a Methods section that describes the sample, measures, and procedures, and has a section that discusses real implications linked to possible results should receive a 3.  A submission that satisfies two of the three criteria perfectly or most but not all of the three criteria should receive a 2.  A submission that satisfies only one of the three criteria should receive a 1.  If the submission does not render or the submitter did not submit the correct assignment, they should receive a 0.
-
 * Submit ISCAM PR#5.
 
 **Wednesday**
@@ -324,6 +303,21 @@ A well-written paper that convinces you the author can fill a gap in the existin
 
 * Read and Complete *Investigation 1.11: Heart Transplant Mortality (cont)* from ISCAMIII prior to class.
 * After action review of **Research Plan Assignment (PR#3)**.
+
+* Revise and push your **Research Plan Assignment** to a folder named **ResearchPlan** in your private repository no later than 5:00 PM Friday.  I will grade your **Research Plan Assignment** using the Grading Rubric for **Research Plan Assignment** (PR#2).  I will also check to make sure the document compiles based on the `*.Rmd` and `*.bib` files in your **ResearchPlan** folder.  
+
+#### Grading Rubric for **Research Plan Assignment** (PR#2)
+
+Field      | Excellent          |  Competent      |  Needs Work
+-----------|--------------------|-----------------|-------------------
+Document (*.html) opens without issue and was created using an *Rmd file | Document opens without issue and no author name is present (0.6) | Document opens but author's name is visible (0.4) | Document does not open (0.1)
+Clarity | Few errors of grammar and usage; any minor errors do not interfere with meaning.  Language style and word choice are highly effective and enhance meaning.  Style and word choice are appropriate for the assignment. The title is a concise statement of the main topic that identifies the actual variables under investigation and the relationship between them. (0.6) | Some errors of grammar and usage; errors do not interfere with meaning.  Language style and word choice are for the most part effective and appropriate for the assignment.  The title is not a concise statement of the main topic or does not identify the variables under investigation and the relationship between them (0.4)  | Major errors of grammar and usage make meaning unclear.  Language style and word choice are ineffective and/or inappropriate.  The title is does not identify the variables under investigation of the relationship between them (0.1) 
+Introduction | The introduction describes the question the author intends to investigate and how their research relates to other work in the field.  The literature review justifies the proposed research by identifying a hole in existing scholarship. (0.6) |  The introduction describes the question the author intends to investigate and how their research relates to other work in the field.  The literature review does not justify the proposed research by identifying a hole in existing scholarship. (0.4) | The introduction does not describe the proposed research or identify a hole in existing research. (0.1)
+Organization | There is a **Methods** section that describes how the research was conducted with discussion of the _sample_, _measures_, and _procedures_.  There is an **Implications/Predicted Results** section that discusses real implications linked to possible results. (0.6) | There is a **Methods** section that describes how the research was conducted but no discussion of the _sample_, _measures_, and _procedures_.  There is an **Implications/Predicted Results** but no discussion of real implications linked to possible results. (0.4) | The **Methods** and **Implications/Predicted Results** sections are missing. (0.1)
+Sources | five or more sources less than 10 years old --- references are automatically generated from a Zotero BibTeX file (0.6) | two or more sources less than 10 years old --- references are automatically generated from a Zotero BibTeX file (0.4) | fewer than two sources that are less than 10 years old --- references are not automatically generated from a Zotero BibTeX file (0.1)
+
+
+A well-written paper that convinces you the author can fill a gap in the existing scholarship, has a title that is a concise statement of the main topic and identifies the actual variables under investigation and the relationship between them, has an introduction supported with at least five references, has a Methods section that describes the sample, measures, and procedures, and has a section that discusses real implications linked to possible results should receive a 3.  If the submission does not render or the submitter did not submit the correct assignment, they should receive a 0.
 
 ### Week 7: (Sep 28, 30, Oct 2)
 
