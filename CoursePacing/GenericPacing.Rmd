@@ -295,7 +295,7 @@ Graphs | There are barplots for three different categorical variables with appro
 
 
 
-* Submit ISCAM PR#5.
+* Submit ISCAM PR#5 NLT 23:00 9/22/15 (*Investigation 1.8: Is ESP real?* parts a, d, g, i, and j; *Investigation 1.9: Halloween Treat Choices* parts a, f, 0, p, q, and r; RR chapter 6.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/](https://www.crowdgrader.org/crowdgrader/venues/view_venue/).
 
 **Wednesday**
 
