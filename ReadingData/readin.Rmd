@@ -1,0 +1,25 @@
+---
+title: "Reading Data"
+author: "Alan"
+date: "9/16/2015"
+output: html_document
+---
+
+Download the `csv` files you need from [http://nces.ed.gov/ipeds/datacenter/DataFiles.aspx](http://nces.ed.gov/ipeds/datacenter/DataFiles.aspx).  As an example, I have downloaded the files `ic2013_rv.csv` and `hd2013.csv` and stored the files one level down from this file in a directory named `Data`.  To read a file, use the `read.csv` function.
+
+```{r}
+IC2013 <- read.csv(file = "./Data/ic2013_rv.csv", na.strings = ".")
+IC2013[1:6, 1:8]
+dim(IC2013)
+HD2013 <- read.csv(file = "./Data/hd2013.csv", na.strings = ".")
+dim(HD2013)
+HD2013[1:6, 1:2]
+```
+
+To merge the two files use the `full_join` function from `dplyr`.
+
+```{r}
+MERGED <- dplyr::full_join(IC2013, HD2013, by = "UNITID")
+dim(MERGED)
+MERGED[1:6, 200:205]
+```
