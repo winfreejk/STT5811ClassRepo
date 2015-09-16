@@ -8,8 +8,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
-<meta name="author" content="Alan" />
+<meta name="author" content="R-Man" />
 
+<meta name="date" content="2015-09-16" />
 
 <title>Reading Data</title>
 
@@ -62,12 +63,12 @@ img {
 
 <div id="header">
 <h1 class="title">Reading Data</h1>
-<h4 class="author"><em>Alan</em></h4>
-<h4 class="date"><em>9/16/2015</em></h4>
+<h4 class="author"><em>R-Man</em></h4>
+<h4 class="date"><em>2015-09-16</em></h4>
 </div>
 
 
-<p>Download the <code>csv</code> files you need from <a href="http://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"><a href="http://nces.ed.gov/ipeds/datacenter/DataFiles.aspx" class="uri">http://nces.ed.gov/ipeds/datacenter/DataFiles.aspx</a></a>. As an example, I have downloaded the files <code>ic2013_rv.csv</code> and <code>hd2013.csv</code> and stored the files one level down from this file in a directory named <code>Data</code>. To read a file, use the <code>read.csv</code> function.</p>
+<p>Download the <code>csv</code> files you need from <a href="http://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"><a href="http://nces.ed.gov/ipeds/datacenter/DataFiles.aspx" class="uri">http://nces.ed.gov/ipeds/datacenter/DataFiles.aspx</a></a>. As an example, I have downloaded the files <code>ic2013_rv.csv</code> and <code>hd2013.csv</code>. The files are stored one level down from this <code>Rmarkdown</code> document in a directory named <code>Data</code>. To read a file, use the <code>read.csv</code> function. Note that these <code>csv</code> files use a <code>.</code> to denote a missing value.</p>
 <pre class="r"><code>IC2013 &lt;- read.csv(file = &quot;./Data/ic2013_rv.csv&quot;, na.strings = &quot;.&quot;)
 IC2013[1:6, 1:8]</code></pre>
 <pre><code>##   UNITID PEO1ISTR PEO2ISTR PEO3ISTR PEO4ISTR PEO5ISTR PEO6ISTR CNTLAFFI
@@ -77,31 +78,191 @@ IC2013[1:6, 1:8]</code></pre>
 ## 4 100706        0        1        0        1        1        0        1
 ## 5 100724        0        1        0        0        0        0        1
 ## 6 100733        1        1        1        1        0        0        1</code></pre>
+<pre class="r"><code>IC2013 &lt;- dplyr::tbl_df(IC2013)
+IC2013</code></pre>
+<pre><code>## Source: local data frame [7,614 x 178]
+## 
+##    UNITID PEO1ISTR PEO2ISTR PEO3ISTR PEO4ISTR PEO5ISTR PEO6ISTR CNTLAFFI
+##     (int)    (int)    (int)    (int)    (int)    (int)    (int)    (int)
+## 1  100654        0        1        0        0        0        0        1
+## 2  100663        0        1        1        0        0        0        1
+## 3  100690        0        1        1        0        0        0        4
+## 4  100706        0        1        0        1        1        0        1
+## 5  100724        0        1        0        0        0        0        1
+## 6  100733        1        1        1        1        0        0        1
+## 7  100751        1        1        1        1        1        1        1
+## 8  100760        1        1       -2        0        1        0        1
+## 9  100812        0        1        0        0        0        0        1
+## 10 100830        0        1        1        0        0        0        1
+## ..    ...      ...      ...      ...      ...      ...      ...      ...
+## Variables not shown: PUBPRIME (int), PUBSECON (int), RELAFFIL (int),
+##   LEVEL1 (int), LEVEL2 (int), LEVEL3 (int), LEVEL4 (int), LEVEL5 (int),
+##   LEVEL6 (int), LEVEL7 (int), LEVEL8 (int), LEVEL12 (int), LEVEL17 (int),
+##   LEVEL18 (int), LEVEL19 (int), OPENADMP (int), ADMCON1 (int), ADMCON2
+##   (int), ADMCON3 (int), ADMCON4 (int), ADMCON5 (int), ADMCON6 (int),
+##   ADMCON7 (int), ADMCON8 (int), ADMCON9 (int), APPDATE (int), XAPPLCNM
+##   (fctr), APPLCNM (int), XAPPLCNW (fctr), APPLCNW (int), XADMSSNM (fctr),
+##   ADMSSNM (int), XADMSSNW (fctr), ADMSSNW (int), XENRLFTM (fctr), ENRLFTM
+##   (int), XENRLFTW (fctr), ENRLFTW (int), XENRLPTM (fctr), ENRLPTM (int),
+##   XENRLPTW (fctr), ENRLPTW (int), SATACTDT (int), XSATNUM (fctr), SATNUM
+##   (int), XSATPCT (fctr), SATPCT (int), XACTNUM (fctr), ACTNUM (int),
+##   XACTPCT (fctr), ACTPCT (int), XSATVR25 (fctr), SATVR25 (int), XSATVR75
+##   (fctr), SATVR75 (int), XSATMT25 (fctr), SATMT25 (int), XSATMT75 (fctr),
+##   SATMT75 (int), XSATWR25 (fctr), SATWR25 (int), XSATWR75 (fctr), SATWR75
+##   (int), XACTCM25 (fctr), ACTCM25 (int), XACTCM75 (fctr), ACTCM75 (int),
+##   XACTEN25 (fctr), ACTEN25 (int), XACTEN75 (fctr), ACTEN75 (int), XACTMT25
+##   (fctr), ACTMT25 (int), XACTMT75 (fctr), ACTMT75 (int), XACTWR25 (fctr),
+##   ACTWR25 (int), XACTWR75 (fctr), ACTWR75 (int), CREDITS1 (int), CREDITS2
+##   (int), CREDITS3 (int), CREDITS4 (int), SLO5 (int), SLO51 (int), SLO52
+##   (int), SLO53 (int), SLO6 (int), SLO7 (int), SLO8 (int), SLO81 (int),
+##   SLO82 (int), SLO83 (int), SLO9 (int), YRSCOLL (int), STUSRV1 (int),
+##   STUSRV2 (int), STUSRV3 (int), STUSRV4 (int), STUSRV8 (int), STUSRV9
+##   (int), LIBFAC (int), ATHASSOC (int), ASSOC1 (int), ASSOC2 (int), ASSOC3
+##   (int), ASSOC4 (int), ASSOC5 (int), ASSOC6 (int), SPORT1 (int), CONFNO1
+##   (int), SPORT2 (int), CONFNO2 (int), SPORT3 (int), CONFNO3 (int), SPORT4
+##   (int), CONFNO4 (int), CALSYS (int), XAPPFEEU (fctr), APPLFEEU (int),
+##   XAPPFEEG (fctr), APPLFEEG (int), FT_UG (int), FT_FTUG (int), FTGDNIDP
+##   (int), PT_UG (int), PT_FTUG (int), PTGDNIDP (int), DOCPP (int), DOCPPSP
+##   (int), TUITVARY (int), ROOM (int), XROOMCAP (fctr), ROOMCAP (int), BOARD
+##   (int), XMEALSWK (fctr), MEALSWK (int), XROOMAMT (fctr), ROOMAMT (int),
+##   XBORDAMT (fctr), BOARDAMT (int), XRMBDAMT (fctr), RMBRDAMT (int),
+##   ALLONCAM (int), XENRLM (fctr), ENRLM (int), XENRLW (fctr), ENRLW (int),
+##   XENRLT (fctr), ENRLT (int), XAPPLCN (fctr), APPLCN (int), XADMSSN
+##   (fctr), ADMSSN (int), XENRLFT (fctr), ENRLFT (int), XENRLPT (fctr),
+##   ENRLPT (int), TUITPL (int), TUITPL1 (int), TUITPL2 (int), TUITPL3 (int),
+##   TUITPL4 (int), DISAB (int), XDISABPC (fctr), DISABPCT (int), DISTNCED
+##   (dbl), DSTNCED1 (dbl), DSTNCED2 (dbl), DSTNCED3 (int)</code></pre>
 <pre class="r"><code>dim(IC2013)</code></pre>
 <pre><code>## [1] 7614  178</code></pre>
 <pre class="r"><code>HD2013 &lt;- read.csv(file = &quot;./Data/hd2013.csv&quot;, na.strings = &quot;.&quot;)
 dim(HD2013)</code></pre>
 <pre><code>## [1] 7764   68</code></pre>
+<pre class="r"><code>HD2013 &lt;- dplyr::tbl_df(HD2013)
+HD2013</code></pre>
+<pre><code>## Source: local data frame [7,764 x 68]
+## 
+##    UNITID                              INSTNM
+##     (int)                              (fctr)
+## 1  100654            Alabama A &amp; M University
+## 2  100663 University of Alabama at Birmingham
+## 3  100690                  Amridge University
+## 4  100706 University of Alabama in Huntsville
+## 5  100724            Alabama State University
+## 6  100733 University of Alabama System Office
+## 7  100751           The University of Alabama
+## 8  100760   Central Alabama Community College
+## 9  100812             Athens State University
+## 10 100830     Auburn University at Montgomery
+## ..    ...                                 ...
+## Variables not shown: ADDR (fctr), CITY (fctr), STABBR (fctr), ZIP (fctr),
+##   FIPS (int), OBEREG (int), CHFNM (fctr), CHFTITLE (fctr), GENTELE (dbl),
+##   FAXTELE (dbl), EIN (int), OPEID (int), OPEFLAG (int), WEBADDR (fctr),
+##   ADMINURL (fctr), FAIDURL (fctr), APPLURL (fctr), NPRICURL (fctr), SECTOR
+##   (int), ICLEVEL (int), CONTROL (int), HLOFFER (int), UGOFFER (int),
+##   GROFFER (int), HDEGOFR1 (int), DEGGRANT (int), HBCU (int), HOSPITAL
+##   (int), MEDICAL (int), TRIBAL (int), LOCALE (int), OPENPUBL (int), ACT
+##   (fctr), NEWID (int), DEATHYR (int), CLOSEDAT (fctr), CYACTIVE (int),
+##   POSTSEC (int), PSEFLAG (int), PSET4FLG (int), RPTMTH (int), IALIAS
+##   (fctr), INSTCAT (int), CCBASIC (int), CCIPUG (int), CCIPGRAD (int),
+##   CCUGPROF (int), CCENRPRF (int), CCSIZSET (int), CARNEGIE (int), LANDGRNT
+##   (int), INSTSIZE (int), CBSA (int), CBSATYPE (int), CSA (int), NECTA
+##   (int), F1SYSTYP (int), F1SYSNAM (fctr), F1SYSCOD (int), COUNTYCD (int),
+##   COUNTYNM (fctr), CNGDSTCD (int), LONGITUD (dbl), LATITUDE (dbl), DFRCGID
+##   (int), DFRCUSCG (int)</code></pre>
 <pre class="r"><code>HD2013[1:6, 1:2]</code></pre>
-<pre><code>##   UNITID                              INSTNM
+<pre><code>## Source: local data frame [6 x 2]
+## 
+##   UNITID                              INSTNM
+##    (int)                              (fctr)
 ## 1 100654            Alabama A &amp; M University
 ## 2 100663 University of Alabama at Birmingham
 ## 3 100690                  Amridge University
 ## 4 100706 University of Alabama in Huntsville
 ## 5 100724            Alabama State University
 ## 6 100733 University of Alabama System Office</code></pre>
-<p>To merge the two files use the <code>full_join</code> function from <code>dplyr</code>.</p>
+<p>To merge the two files, use the <code>full_join</code> function from <code>dplyr</code>.</p>
 <pre class="r"><code>MERGED &lt;- dplyr::full_join(IC2013, HD2013, by = &quot;UNITID&quot;)
 dim(MERGED)</code></pre>
 <pre><code>## [1] 7764  245</code></pre>
 <pre class="r"><code>MERGED[1:6, 200:205]</code></pre>
-<pre><code>##   CONTROL HLOFFER UGOFFER GROFFER HDEGOFR1 DEGGRANT
+<pre><code>## Source: local data frame [6 x 6]
+## 
+##   CONTROL HLOFFER UGOFFER GROFFER HDEGOFR1 DEGGRANT
+##     (int)   (int)   (int)   (int)    (int)    (int)
 ## 1       1       9       1       1       12        1
 ## 2       1       9       1       1       11        1
 ## 3       2       9       1       1       11        1
 ## 4       1       9       1       1       11        1
 ## 5       1       9       1       1       11        1
 ## 6       1       9       1       1       11        1</code></pre>
+<pre class="r"><code>MERGED</code></pre>
+<pre><code>## Source: local data frame [7,764 x 245]
+## 
+##    UNITID PEO1ISTR PEO2ISTR PEO3ISTR PEO4ISTR PEO5ISTR PEO6ISTR CNTLAFFI
+##     (int)    (int)    (int)    (int)    (int)    (int)    (int)    (int)
+## 1  100654        0        1        0        0        0        0        1
+## 2  100663        0        1        1        0        0        0        1
+## 3  100690        0        1        1        0        0        0        4
+## 4  100706        0        1        0        1        1        0        1
+## 5  100724        0        1        0        0        0        0        1
+## 6  100733        1        1        1        1        0        0        1
+## 7  100751        1        1        1        1        1        1        1
+## 8  100760        1        1       -2        0        1        0        1
+## 9  100812        0        1        0        0        0        0        1
+## 10 100830        0        1        1        0        0        0        1
+## ..    ...      ...      ...      ...      ...      ...      ...      ...
+## Variables not shown: PUBPRIME (int), PUBSECON (int), RELAFFIL (int),
+##   LEVEL1 (int), LEVEL2 (int), LEVEL3 (int), LEVEL4 (int), LEVEL5 (int),
+##   LEVEL6 (int), LEVEL7 (int), LEVEL8 (int), LEVEL12 (int), LEVEL17 (int),
+##   LEVEL18 (int), LEVEL19 (int), OPENADMP (int), ADMCON1 (int), ADMCON2
+##   (int), ADMCON3 (int), ADMCON4 (int), ADMCON5 (int), ADMCON6 (int),
+##   ADMCON7 (int), ADMCON8 (int), ADMCON9 (int), APPDATE (int), XAPPLCNM
+##   (fctr), APPLCNM (int), XAPPLCNW (fctr), APPLCNW (int), XADMSSNM (fctr),
+##   ADMSSNM (int), XADMSSNW (fctr), ADMSSNW (int), XENRLFTM (fctr), ENRLFTM
+##   (int), XENRLFTW (fctr), ENRLFTW (int), XENRLPTM (fctr), ENRLPTM (int),
+##   XENRLPTW (fctr), ENRLPTW (int), SATACTDT (int), XSATNUM (fctr), SATNUM
+##   (int), XSATPCT (fctr), SATPCT (int), XACTNUM (fctr), ACTNUM (int),
+##   XACTPCT (fctr), ACTPCT (int), XSATVR25 (fctr), SATVR25 (int), XSATVR75
+##   (fctr), SATVR75 (int), XSATMT25 (fctr), SATMT25 (int), XSATMT75 (fctr),
+##   SATMT75 (int), XSATWR25 (fctr), SATWR25 (int), XSATWR75 (fctr), SATWR75
+##   (int), XACTCM25 (fctr), ACTCM25 (int), XACTCM75 (fctr), ACTCM75 (int),
+##   XACTEN25 (fctr), ACTEN25 (int), XACTEN75 (fctr), ACTEN75 (int), XACTMT25
+##   (fctr), ACTMT25 (int), XACTMT75 (fctr), ACTMT75 (int), XACTWR25 (fctr),
+##   ACTWR25 (int), XACTWR75 (fctr), ACTWR75 (int), CREDITS1 (int), CREDITS2
+##   (int), CREDITS3 (int), CREDITS4 (int), SLO5 (int), SLO51 (int), SLO52
+##   (int), SLO53 (int), SLO6 (int), SLO7 (int), SLO8 (int), SLO81 (int),
+##   SLO82 (int), SLO83 (int), SLO9 (int), YRSCOLL (int), STUSRV1 (int),
+##   STUSRV2 (int), STUSRV3 (int), STUSRV4 (int), STUSRV8 (int), STUSRV9
+##   (int), LIBFAC (int), ATHASSOC (int), ASSOC1 (int), ASSOC2 (int), ASSOC3
+##   (int), ASSOC4 (int), ASSOC5 (int), ASSOC6 (int), SPORT1 (int), CONFNO1
+##   (int), SPORT2 (int), CONFNO2 (int), SPORT3 (int), CONFNO3 (int), SPORT4
+##   (int), CONFNO4 (int), CALSYS (int), XAPPFEEU (fctr), APPLFEEU (int),
+##   XAPPFEEG (fctr), APPLFEEG (int), FT_UG (int), FT_FTUG (int), FTGDNIDP
+##   (int), PT_UG (int), PT_FTUG (int), PTGDNIDP (int), DOCPP (int), DOCPPSP
+##   (int), TUITVARY (int), ROOM (int), XROOMCAP (fctr), ROOMCAP (int), BOARD
+##   (int), XMEALSWK (fctr), MEALSWK (int), XROOMAMT (fctr), ROOMAMT (int),
+##   XBORDAMT (fctr), BOARDAMT (int), XRMBDAMT (fctr), RMBRDAMT (int),
+##   ALLONCAM (int), XENRLM (fctr), ENRLM (int), XENRLW (fctr), ENRLW (int),
+##   XENRLT (fctr), ENRLT (int), XAPPLCN (fctr), APPLCN (int), XADMSSN
+##   (fctr), ADMSSN (int), XENRLFT (fctr), ENRLFT (int), XENRLPT (fctr),
+##   ENRLPT (int), TUITPL (int), TUITPL1 (int), TUITPL2 (int), TUITPL3 (int),
+##   TUITPL4 (int), DISAB (int), XDISABPC (fctr), DISABPCT (int), DISTNCED
+##   (dbl), DSTNCED1 (dbl), DSTNCED2 (dbl), DSTNCED3 (int), INSTNM (fctr),
+##   ADDR (fctr), CITY (fctr), STABBR (fctr), ZIP (fctr), FIPS (int), OBEREG
+##   (int), CHFNM (fctr), CHFTITLE (fctr), GENTELE (dbl), FAXTELE (dbl), EIN
+##   (int), OPEID (int), OPEFLAG (int), WEBADDR (fctr), ADMINURL (fctr),
+##   FAIDURL (fctr), APPLURL (fctr), NPRICURL (fctr), SECTOR (int), ICLEVEL
+##   (int), CONTROL (int), HLOFFER (int), UGOFFER (int), GROFFER (int),
+##   HDEGOFR1 (int), DEGGRANT (int), HBCU (int), HOSPITAL (int), MEDICAL
+##   (int), TRIBAL (int), LOCALE (int), OPENPUBL (int), ACT (fctr), NEWID
+##   (int), DEATHYR (int), CLOSEDAT (fctr), CYACTIVE (int), POSTSEC (int),
+##   PSEFLAG (int), PSET4FLG (int), RPTMTH (int), IALIAS (fctr), INSTCAT
+##   (int), CCBASIC (int), CCIPUG (int), CCIPGRAD (int), CCUGPROF (int),
+##   CCENRPRF (int), CCSIZSET (int), CARNEGIE (int), LANDGRNT (int), INSTSIZE
+##   (int), CBSA (int), CBSATYPE (int), CSA (int), NECTA (int), F1SYSTYP
+##   (int), F1SYSNAM (fctr), F1SYSCOD (int), COUNTYCD (int), COUNTYNM (fctr),
+##   CNGDSTCD (int), LONGITUD (dbl), LATITUDE (dbl), DFRCGID (int), DFRCUSCG
+##   (int)</code></pre>
 
 
 </div>
