@@ -39,7 +39,7 @@ AddHealth <- AddHealth %>%
   rename(Weight = H1GH60)
 summary(AddHealth$Weight)
 ggplot(data = AddHealth, aes(y = Weight, x = HeightIn)) +
-  geom_point(color = "blue") +
+  geom_point(color = "blue", alpha = 0.3) +
   theme_bw() + 
   labs(y = "Weight in Pounds", x = "Height in Inches") + 
   geom_smooth()
@@ -57,14 +57,16 @@ xtabs(~Gender, data = AddHealth)
 
 ```{r warning = FALSE, message = FALSE}
 ggplot(data = AddHealth, aes(y = Weight, x = HeightIn, color = Gender)) +
-  geom_point(alpha = 0.2) +
+  scale_color_manual(values = c("blue", "pink")) +
+  geom_point(alpha = 0.5) +
   theme_bw() + 
   labs(y = "Weight in Pounds", x = "Height in Inches") + 
   geom_smooth()
 ```
 
 ```{r warning = FALSE, message = FALSE}
-ggplot(data = na.omit(AddHealth[, c("HeightIn", "Weight", "Gender")]), aes(x = HeightIn, color = Gender, fill = Gender)) + 
+ggplot(data = na.omit(AddHealth[, c("HeightIn", "Gender")]), aes(x = HeightIn, fill = Gender)) + 
+  scale_fill_manual(values = c("blue", "pink")) +
   geom_density() +
   theme_bw() + 
   labs(x = "Height in Inches") + 
