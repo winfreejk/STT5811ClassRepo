@@ -1,0 +1,46 @@
+---
+title: "Options"
+author: "Joe TeXer"
+date: "9/28/2015"
+output: html_document
+---
+
+```{r, label = "SETUP", echo = FALSE, results= 'hide', message = FALSE, warning = FALSE}
+library(knitr)
+knitr::opts_chunk$set(comment = NA, fig.show = 'as.is', fig.align = 'center', fig.height = 4, fig.width = 4, prompt = TRUE, highlight = TRUE, tidy = FALSE, warning = FALSE, message = FALSE, tidy.opts=list(blank = TRUE, width.cutoff= 75, cache = TRUE))
+```
+
+```{r}
+sims <- 10000
+size <- 25
+set.seed(123)
+M1 <- matrix(rnorm(sims*size, 10, 2), nrow = sims, byrow = TRUE)
+dim(M1)
+xbar <- apply(M1, 1, mean)
+md <- apply(M1, 1, median)
+mean(xbar)
+sd(xbar)
+median(xbar)
+sd(md)
+plot(density(md, bw = 0.15), ylim = c(0, 1))
+lines(density(xbar, bw = 0.15), col = "red")
+```
+
+The same thing using a loop now.
+
+```{r}
+xbar2 <- numeric(sims)
+md2 <- numeric(sims)
+set.seed(123)
+for(i in 1:sims){
+  sample <- rnorm(size, 10, 2)
+  xbar2[i] <- mean(sample)
+  md2[i] <- median(sample)
+}
+mean(xbar2)
+sd(xbar2)
+median(xbar2)
+sd(md2)
+plot(density(md2, bw = 0.15), ylim = c(0, 1))
+lines(density(xbar2, bw = 0.15), col = "red")
+```

@@ -1,0 +1,31 @@
+---
+title: "Exercise Description"
+author: "R-Man"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+* First make sure you have a copy of `PDS` installed locally.  If you do not see `PDS` Version 0.1.2 under your User Library, run the command
+
+```
+devtools::install_github('alanarnholt/PDS', build_vignettes = TRUE)
+```
+at the `R` prompt.
+
+* Open the Code Book for `AddHealth` Wave I. In the Files tab of RStudio click 
+```
+Home > R > x86_64-unknown-linux-gnu-library > 3.2 > PDS > CodeBooks > AddHealthW1 > AddHealthCodeBookWaveI.pdf
+```
+
+* Create a variable named `HeightIn` that stores the height in inches of the subjects from the AddHealth Wave I data set.
+
+* Use the `summary` function on the variable `HeightIn`.  Do you notice any unusual values?  Is it possible to have a person that is 1274 inches tall?
+
+* Make sure you properly recode all missing values.  Once you have recoded all missing values, run `summary` on `HeightIn` again.
+
+* Create a varaible named `Weight` that stores the weight of the subjects in `AddHealth`.  Make sure to recode all missing values.
+
+* Create a scatterplot of `Weight` versus `HeightIn`.
+
+* Create a variable named `Gender` that has labels `Male` and `Female` for the numeric values used in `BIO_SEX`.  Make sure to recode all missing values.
+
