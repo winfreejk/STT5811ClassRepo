@@ -47,7 +47,7 @@ set.seed(649)
 
 * *Your answer*
 
-(f) Is the average length you calculated in d. a parameter or a statistic? Explain. Do we know its value? What symbol can we use to denote its value? [3 pts]
+(f) Is the average length you calculated in e. a parameter or a statistic? Explain. Do we know its value? What symbol can we use to denote its value? [3 pts]
 
 * *Your answer*
 
