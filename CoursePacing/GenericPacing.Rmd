@@ -350,7 +350,7 @@ Graphs | There are at least two different bar plots of categorical variables wit
 
 **Wednesday**
 
-* Read chapter 8 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+~~* Read chapter 8 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).~~
 
 * Read and Complete *Investigation 1.12: Sampling Words* from ISCAMIII prior to class.
 
@@ -400,7 +400,7 @@ DataManagement | Clear explanation of the selected group and how the data was ma
 Graphs | There are at least two different bar plots of categorical variables with appropriate labels and R code.  A sentence or two explains each barplot mentioning features that may be present such as unexpected results, uneven distributions, extra categories, unbalanced experiments, missing values, etc.  There is a least one histogram or density plot of a numeric variable proposed in the study.  When describing the distribution of the numeric variable, the author describes the shape and uses appropriate statistics to characterize the center and spread of the distribution.  There are at least two bivariate/multivariate graphs of the principal constructs the researcher is proposing to study. (1.8) | There is only one bar plot of a categorical variable with appropriate labels and R code.  A sentence or two explains the barplot mentioning features that may be present such as unexpected results, uneven distributions, extra categories, unbalanced experiments, missing values, etc.  There is a least one histogram or density plot of a numeric variable proposed in the study.  When describing the distribution of the numeric variable, the author describes the shape and uses inappropriate statistics to characterize the center and spread of the distribution.  There is only one bivariate/multivariate graph of the principal constructs the researcher is proposing to study. (1.4) | No barplots, histograms, density plots, or bivariate/multivariate graphs are shown in the document.  (0.1)
 
 
-* Submit ISCAM PR#7.
+~~* Submit ISCAM PR#7.~~
 
 **Wednesday**
 
@@ -424,7 +424,7 @@ Graphs | There are at least two different bar plots of categorical variables wit
 * Read Chapter 10 of PDS (Hypothesis Testing), and watch all videos in the chapter.
 * Read the documents `SamplingDistributions.html` and `StatisticsTemplate.html` in the `/Statistics` folder.
 
-* Submit ISCAM PR#8.
+~~* Submit ISCAM PR#8.~~
  
 You should revise your assignment from last week as needed based on peer comments.  I encourage everyone to make an appointment with the writing center and to have the writing center review your current assignment.
 
@@ -447,7 +447,7 @@ You should revise your assignment from last week as needed based on peer comment
 * Read the document `ANOVA.html` in the `/Statistics` folder.
 * Work on the **ANOVA Assignment** 
 * The **ANOVA Assignment** is due NLT 5 PM Friday (Oct 23).  Submit assignment
-via [http://www.crowdgrader.org](http://www.crowdgrader.org).  The direct link for the **ANOVA Assignment** is (http://www.crowdgrader.org/).
+via [http://www.crowdgrader.org](http://www.crowdgrader.org).  The direct link for the **ANOVA Assignment** is https://www.crowdgrader.org/crowdgrader/venues/view_venue/1508).
 
 **ANOVA Assignment** 
 
@@ -473,11 +473,11 @@ Is there code and output for testing the null hypothesis with an ANOVA? (0.6)
 
 Is there an appropriate explanation of the results including a post hoc test with interpretation if the results from the ANOVA are significant? (0.6)
 
-* Submit ISCAM PR#9.
+~~* Submit ISCAM PR#9.~~
 
 **Wednesday**
 
-* Read chapter 11 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+* Read/reread chapters 8, 9, and 10 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
 
 * Read and Complete *Investigation 1.17: Cat Households* from ISCAMIII prior to class.
 
@@ -531,11 +531,13 @@ Are there appropriate post-hoc tests if the Chi-Square test resulted in a signif
 
 Is there a sentence or two describing the results of the Chi-Square test(s)? (0.3)
 
-* Submit ISCAM PR#10.
+~~* Submit ISCAM PR#10.~~
+
+* Submit ISCAM PR#7 NLT 23:00 10/27/15 (*Investigation 1.17: Cat Households* all parts; *Investigation 1.18: Female Senators* all parts; RR chapters 8-10.)  The direct link for the assignment is []().
 
 **Wednesday**
 
-* Read chapter 12 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+* Read chapter 11 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
 
 * Read and Complete *Investigation 2.1: Birth Weights* from ISCAMIII prior to class.
 
@@ -584,11 +586,11 @@ Does the author explain their results following the example in PDS? (0.3)
 
 Does the author explain their results? (Graphs should be used in the explanation.) (0.3)
 
-* Submit ISCAM PR#11.
+* Submit ISCAM PR#8. Review of chapter 11 RR.
 
 **Wednesday**
 
-* Read chapter 13 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+* Read chapter 12 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
 
 * Read and Complete *Investigation 2.3: Readability of Cancer Pamphlets* from ISCAMIII prior to class.
 
@@ -600,11 +602,12 @@ Does the author explain their results? (Graphs should be used in the explanation
 ### Week 13: (Nov 9, 11, 13)
 
 **Monday**
+
 * Read Chapters 15 and 17 in PDS (Linear Regression and Confounding and Multivariate Models) and watch the embedded videos. 
 * Read the document `Regression.html` in the `/Regression` folder. 
 * Work on your poster.
-* Submit ISCAM PR#12.
-
+* ~~Submit ISCAM PR#12.~~
+* Submit ISCAM PR#9. Review of chapter 12 RR.
  
 * Work on the **Regression Assignment** 
 * The **Regression Assignment** is due NLT 5 PM Friday (Nov 13).  Submit the assignment via [http://www.crowdgrader.org](http://www.crowdgrader.org).  The direct link for the **Regression Assignment** is (http://www.crowdgrader.org/).
@@ -623,7 +626,7 @@ Does the author describe their results appropriately? (1)
 
 **Wednesday**
 
-* Read chapter 14 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+* Read chapter 13 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
 
 * Read and Complete *Investigation 2.5: Healthy Body Temperatures* from ISCAMIII prior to class.
 
@@ -638,11 +641,13 @@ Does the author describe their results appropriately? (1)
 
 * Read Chapters 16 and 18 in PDS (Sampling and Designing Studies and Poster Presentation), and watch the embedded videos. 
 * Work on your poster.
-* Submit ISCAM PR#13.
+* ~~Submit ISCAM PR#13.~~
+* Submit ISCAM PR#10. Review of chapter 13 RR.
 
 **Wednesday**
 
 * Read and Complete *Investigation 2.7: Water Oxygen Levels* from ISCAMIII prior to class.
+* Read chapter 13 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
 
 **Friday**
 
@@ -652,8 +657,15 @@ Does the author describe their results appropriately? (1)
 ### Week 15: (Nov 23, No Class Nov 25, 26, and 27; Nov 30, Dec 2----Poster Presentation Dec 3)
 
 * Work on your poster.
+
 * Print out your poster.
+
+* Review course materials (ISCAMIII, PDS, RR).  Write a review and comment on which materials you found most helpful and which activities you found helpful (be very specific and site examples).  Which materials and activities were not helpful (be very specific and site examples)?  List three areas where your knowledge increased during the semester (be very specific and site examples).  Suggest potential reorderings of the course topics and rationale for doing so.
+
 * Present your poster (Dec 3).
+
 * Celebrate!
+
+* Final Exam (in class during exam period)
 
 
