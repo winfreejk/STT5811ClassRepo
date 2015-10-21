@@ -533,7 +533,7 @@ Is there a sentence or two describing the results of the Chi-Square test(s)? (0.
 
 ~~* Submit ISCAM PR#10.~~
 
-* Submit ISCAM PR#7 NLT 23:00 10/27/15 (*Investigation 1.17: Cat Households* all parts; *Investigation 1.18: Female Senators* all parts; RR chapters 8-10.)  The direct link for the assignment is []().
+* Submit ISCAM PR#7 NLT 23:00 10/27/15 (*Investigation 1.17: Cat Households* all parts; *Investigation 1.18: Female Senators* all parts; RR chapters 8-10.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1509](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1509).  Include one example with code illustrating a concept you have mastered for each chapter of RR you review. I will add an additional "peer review" grade for the assignment as well as a separate grade for your chapter summary reviews of RR.   
 
 **Wednesday**
 
