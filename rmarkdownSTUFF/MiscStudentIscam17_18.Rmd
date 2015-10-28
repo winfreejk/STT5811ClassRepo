@@ -1,0 +1,80 @@
+---
+title: "Misc Student Work"
+author: "Unknown"
+date: '`r Sys.Date()`'
+output: html_document
+---
+
+```{r, label = "SETUP", echo = FALSE, results= 'hide', message = FALSE, warning = FALSE}
+library(knitr)
+knitr::opts_chunk$set(comment = NA, fig.show = 'as.is', fig.height = 4, fig.width = 4, prompt = TRUE, highlight = TRUE, tidy = FALSE, warning = FALSE, message = FALSE, fig.align = "center",  tidy.opts=list(blank = TRUE, width.cutoff= 80, cache = FALSE))
+```
+
+##Summary 
+
+**Chapter 8 : Statistical Modeling and knitr**   
+
+*This chapter covered tools and `knitr` in more detail. Using `Rmarkdown`, we type in our code and click the knit button to covert to html, word or pdf files. It is a great way to use `Rmarkdown` to make presentation documents because it displays the code and output in your presentation. People can see what kind of code you used to approach your answers just like showing steps on math problems. This chapter said they will explain more detail in the next chapters but it gives some idea of how to start your presentation document. It was interesting to know you can pull in the information from other sources.*  
+
+* For example:  
+
+```{r}
+POP <- read.csv(file=url("http://www1.appstate.edu/~thomleyje/R-datafiles/Popular.csv"))
+summary(POP)
+```
+
+
+**Chapter 9 : Showing Results with Tables**   
+
+*This chapter covered how to present tables in $\LaTeX{}$ and Markdown documents with `knitr`/`Rmarkdown`. It shows a lot of detail on how to make tables and summaries from your data. This is very useful because you can create a table or plot to describe your data when you present. This will help many audiences who better understand visuals. I like using visuals because I understand them better too and it is easy to check your work by looking at your table. It also talks about how you can use a simple command like xtable to view a summary of your data. This chapter was really helpful and easy to understand because it has so many examples.*  
+
+* For example:
+ 
+`{r, label = "firstChunk", comment = NA}`  
+`{r, label = "Agraph", message = FALSE, fig.align = 'left'}`  
+`{r, label = "sessioninfo", comment = NA}`   
+`{r, fig.width=10, fig.height=12}`  
+
+
+**Using `xtable()`**
+
+
+
+```{r}
+library(xtable)
+fm1 <- aov(Grade ~ Gender, data = POP)
+fm1.table <- xtable(fm1, caption = "You Put The Caption HERE", digits = 3)
+fm1.table
+print(fm1.table, type = "html")
+```
+
+**Show the Table now:**
+
+```{r results ='asis', echo = FALSE}
+library(xtable)
+fm1 <- aov(Grade ~ Gender, data = POP)
+fm1.table <- xtable(fm1, caption = "You Put The Caption HERE", digits = 3)
+print(fm1.table, type = "html")
+```
+
+
+**Using `kable`**
+
+```{r}
+knitr::kable(fm1.table, digits = 4)
+```
+
+
+
+**Chapter 10 : Showing Results with Figures**  
+
+*Chapter 10 went into more detail about the things discussed in chapters 8 and 9. It talks about how we can adjust our plots or tables to view as figures. If you did not read this chapter yet, I strongly suggest you read it because it will help on your research. For example how to insert pictures or data in your presentation and using coord-flip to help determine what kind of distibution your violin graphs have. I usually would have said this would have been more helpful if I had read it sooner but I am kind of glad I did it opposite way. Since I know what's going on, I can understand the book very well. For example, when this chapter explained the use of `ggplot2`, I was thinking I might be able to use things the book described next time.*  
+
+* For example :  
+
+Use command called `![mypicture]()`  
+![mypicture](./figures/BlueMoon.png)   
+
+
+
+
