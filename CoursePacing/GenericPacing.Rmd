@@ -586,7 +586,7 @@ Does the author explain their results following the example in PDS? (0.3)
 
 Does the author explain their results? (Graphs should be used in the explanation.) (0.3)
 
-* Submit ISCAM PR#8. Review of chapter 11 RR.
+* Submit ISCAM PR#8. NLT 23:00 11/03/15 (*Investigation 2.1: Birth Weights* parts a, b, g, h, j, k, m, and n; *Investigation 2.2: How Long Can You Stand It* parts a-k; RR chapters 11.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1563](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1563).  Include one example with code illustrating a concept you have mastered for chapter 11 of RR. I will add an additional "peer review" grade for your chapter 11 summary review of RR. 
 
 **Wednesday**
 
