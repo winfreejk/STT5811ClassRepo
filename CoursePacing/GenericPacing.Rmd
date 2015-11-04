@@ -558,7 +558,7 @@ Is there a sentence or two describing the results of the Chi-Square test(s)? (0.
 * Work on your poster.
 
 * Work on the **Correlation assignment** 
-* The **Correlation assignment** is due NLT 5 PM Friday (Nov 6).  Submit the assignment via [http://www.crowdgrader.org](http://www.crowdgrader.org).  The direct link for the **Correlation assignment** is (http://www.crowdgrader.org)
+* The **Correlation assignment** is due NLT 5 PM Friday (Nov 6).  Submit the assignment via [http://www.crowdgrader.org](http://www.crowdgrader.org).  The direct link for the **Correlation Assignment** is (https://www.crowdgrader.org/crowdgrader/venues/view_venue/1580)
 
 **Correlation Assignment** 
 
@@ -578,13 +578,13 @@ Is there a multivariate graph of the principal constructs the researcher is prop
 
 Do all graphs have the *x-* and *y-*axes labeled appropriately? (0.1). Do all graphs have descriptive titles? (0.1)
 
-Is there a section for the Correlation assignment describing the two numeric variables the author uses? (0.5)
+Is there a section for the Correlation assignment describing the two numeric variables the author uses? (0.6)
 
-Is there code and output for computing the correlation coefficient? (0.4)
+Is there code and output for computing and testing the correlation coefficient?  Is there a scatterplot with appropriate labels? (0.6)
 
-Does the author explain their results following the example in PDS? (0.3)
+Does the author explain their results following the example in PDS (direction, form, strength, and outliers)? (0.6)
 
-Does the author explain their results? (Graphs should be used in the explanation.) (0.3)
+
 
 * Submit ISCAM PR#8. NLT 23:00 11/03/15 (*Investigation 2.1: Birth Weights* parts a, b, g, h, j, k, m, and n; *Investigation 2.2: How Long Can You Stand It* parts a-k; RR chapters 11.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1563](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1563).  Include one example with code illustrating a concept you have mastered for chapter 11 of RR. I will add an additional "peer review" grade for your chapter 11 summary review of RR. 
 
