@@ -13,5 +13,4 @@ vignettes/*.html
 vignettes/*.pdf
 .Rproj.user
 
-# LaTeX by products
-LaTeX-knitr/Examples.log
+
