@@ -1,0 +1,149 @@
+\documentclass{article}
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue, linktocpage=true, breaklinks=true]{hyperref}
+\usepackage[margin = 1in]{geometry}
+\usepackage{varioref}  % adds page to references use \vref{} vs \ref{}
+\usepackage{amsthm}
+\newtheoremstyle{rcode}{1pt}{1pt}{}{}{\bfseries}{}{.5em}{}
+\theoremstyle{rcode}
+\newtheorem{rcode}{R Code}[section]
+\newtheorem{GIT}{Git Example}[section]
+% User Commands
+\newcommand{\noind}{\setlength{\parindent}{0pt}}
+\newcommand{\reind}{\setlength{\parindent}{15pt}}
+
+\title{Using the \textbf{R Code} and {\bfseries{Git Example}} Environments with \textbf{knitr}}
+\author{Alan's Modifications and Notes}
+
+\begin{document}
+\maketitle
+
+<<setup, include = FALSE>>=
+knit_hooks$set(rcode = function(before, options, envir) {
+  if (before) sprintf("\\begin{rcode}\\label{%s}\\hfill{}", options$label) else "\\end{rcode}"
+})
+knit_hooks$set(GIT = function(before, options, envir) {
+  if (before) sprintf("\\begin{GIT}\\label{%s}\\hfill{}", options$label) else "\\end{GIT}"
+})
+## data time
+DT <- format(Sys.time(), "%A, %B %d, %Y - %X")
+## Global chunk options next
+opts_chunk$set(comment = NA, cache = TRUE, fig.align = "center", fig.height = 4, fig.width = 4, dev = "tikz")
+@
+
+
+\section{Introduction}
+
+This is a test of the \textbf{R Code} and \textbf{Git Example} environments.  By the way,
+this document was last compiled \Sexpr{DT}.
+
+\subsection{Simple Arithmetic}
+
+<<label = "test-a", rcode = TRUE>>=
+1 + 1
+@
+
+
+\subsection{Generate Random Data}
+
+<<label = "test-b", rcode = TRUE>>=
+set.seed(13)
+x <- rnorm(100)
+@
+\noind
+Find the standard deviation of \texttt{x}.
+
+<<label = "test-c", rcode = TRUE>>=
+sd(x) # standard deviation   
+@
+
+Note that \textbf{R Code} \vref{test-b} and \vref{test-c} are hyperlinked!  The standard deviation of \texttt{x} is computed in \textbf{R Code} \vref{test-c} and is \Sexpr{sd(x)}.
+
+\clearpage
+\subsection{Graphs and Environments}
+
+<<label = "plot1", rcode = TRUE>>=
+set.seed(41)
+junk <- rnorm(10000)
+MEAN <- mean(junk)
+MEAN
+@
+
+The mean of the junk is \Sexpr{MEAN}.  Note: It seems that an error is thrown if
+a code chunk with a graph and \texttt{rcode} is executed at the same time.  Work around is
+as shown below.  That is, hide the figure when showing the code...then show the figure
+with a separate code chunk.  Note that Figure \vref{graphDude} is hyperlinked!
+
+<<label = "Graph", fig.show = "hide">>=
+library(ggplot2)
+ggplot(data = mtcars) + 
+  geom_density(aes(x = mpg), fill = "pink") + 
+  theme_bw() + 
+  labs(x = "miles per gallon", y = "", title = "$\\alpha + \\beta = \\delta$")
+@
+
+\begin{figure}[h]
+<<label = "GraphShow", echo = FALSE, fig.width =3.5, fig.height = 3.5, out.width= "0.5\\textwidth">>=
+<<Graph>>
+@
+\caption{This is where you explain your graph \label{graphDude}}
+\end{figure}
+
+\clearpage
+
+\section{Git Stuff}
+
+When working with OSX, one may want to change \texttt{engine = `sh'} to \texttt{engine = `bash'}.
+
+<<label = "GITlabel", engine = "bash", GIT = TRUE>>=
+git config --list
+@
+
+Look at \textbf{R Code} \vref{test-a} to add $1 + 1$ and get the answer \Sexpr{1 + 1}. The output from \textbf{Git Example} \vref{GITlabel} shows how my machine is configured. \textbf{Git Example} \vref{gitlog} shows the log.
+
+<<label = "gitlog", engine = "sh", GIT = TRUE>>=
+git log --pretty=oneline -3
+@
+
+\clearpage
+
+\section{Using \LaTeX{} in Graphs}
+
+How about some more \LaTeX{} in a \texttt{ggplot2} graph.
+
+<<label = "molatex", tidy = FALSE, eval = FALSE, rcode = TRUE>>=
+f <- function(x){sqrt(2/(x - 1))*gamma(x/2)/gamma((x - 1)/2)}
+library(ggplot2)
+p <- ggplot(data.frame(x = c(2, 50)), aes(x = x))
+p + stat_function(fun = f) + 
+  labs(x = "$n$", y = "$\\frac{\\sqrt{2}\\Gamma\\left(\\frac{n}{2}\\right)}
+       {\\sqrt{n-1}\\Gamma\\left(\\frac{n-1}{2}\\right)}$\n") + 
+  theme_bw() + 
+  geom_hline(yintercept = 1, lty = "dashed")
+@
+
+<<label = "molatexFIG", echo = FALSE, out.width = "1.0\\textwidth">>=
+f <- function(x){sqrt(2/(x - 1))*gamma(x/2)/gamma((x - 1)/2)}
+library(ggplot2)
+p <- ggplot(data.frame(x = c(2, 50)), aes(x = x))
+p + stat_function(fun = f) + 
+  labs(x = "$n$", y = "$\\frac{\\sqrt{2}\\Gamma\\left(\\frac{n}{2}\\right)}{\\sqrt{n-1}\\Gamma\\left(\\frac{n-1}{2}\\right)}$\n") + 
+  theme_bw() + 
+  geom_hline(yintercept = 1, lty = "dashed")
+@
+
+<<base, echo = FALSE>>=
+library(ggplot2)
+p <- ggplot(data = mpg, aes(x = cty, y = hwy))
+p + geom_point(size = 1, color = "blue") + 
+  theme_bw() +
+  geom_smooth(method = "lm") + 
+  labs(title = "$\\hat{\\beta}=(X'X)^{-1}X'Y$") 
+@
+
+<<Info, results = "asis", echo = FALSE>>=
+toLatex(sessionInfo(), locale = TRUE)
+@
+
+
+
+\end{document}
