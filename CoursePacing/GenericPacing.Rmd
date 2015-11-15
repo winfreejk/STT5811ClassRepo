@@ -637,7 +637,10 @@ Does the author describe their regression results appropriately? (0.5)
 
 **Friday**
 
-* Read and Complete *Investigation 2.6: Healthy Body Temperatures (cont.)* from ISCAMIII prior to class.
+* ~~Read and Complete *Investigation 2.6: Healthy Body Temperatures (cont.)* from ISCAMIII prior to class.~~
+
+* Read and Complete *Investigation 2.5: Healthy Body Temperatures* from ISCAMIII prior to class.
+
 * After action review of **ANOVA Assignment (PR#8)**.
 
 ### Week 14: (Nov 16, 18, 20)
@@ -647,16 +650,23 @@ Does the author describe their regression results appropriately? (0.5)
 * Read Chapters 16 and 18 in PDS (Sampling and Designing Studies and Poster Presentation), and watch the embedded videos. 
 * Work on your poster.
 * ~~Submit ISCAM PR#13.~~
-* Submit ISCAM PR#10. Review of chapter 13 RR.
+Submit ISCAM PR#10. NLT 23:00 11/17/15 (*Investigation 2.5: Healthy Body Temperatures* all parts. The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1610](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1610).  Include one example with code illustrating a concept you have mastered for chapter 13 of RR.  
+
 
 **Wednesday**
 
-* Read and Complete *Investigation 2.7: Water Oxygen Levels* from ISCAMIII prior to class.
+* Read and Complete *Investigation 2.6: Healthy Body Temperatures (cont.)* from ISCAMIII prior to class.
+
+* ~~Read and Complete *Investigation 2.7: Water Oxygen Levels* from ISCAMIII prior to class.~~
+
 * Read chapter 13 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
 
 **Friday**
 
-* Read and Complete *Investigation 2.8: Turbidity* from ISCAMIII prior to class.
+* Read and Complete *Investigation 2.7: Water Oxygen Levels* from ISCAMIII prior to class.
+
+* ~~Read and Complete *Investigation 2.8: Turbidity* from ISCAMIII prior to class.~~
+
 * After action review of **Regression Assignment (PR#9)**.
  
 ### Week 15: (Nov 23, No Class Nov 25, 26, and 27; Nov 30, Dec 2----Poster Presentation Dec 3)
