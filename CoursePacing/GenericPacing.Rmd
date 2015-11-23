@@ -678,7 +678,7 @@ Submit ISCAM PR#10. NLT 23:00 11/17/15 (*Investigation 2.5: Healthy Body Tempera
 
 * Print out your poster. Make sure your poster is stored in your private repository in a directory named `Poster`.
 
-* Review course materials (ISCAMIII, PDS, RR).  Write a detailed review and comment on which materials you found most helpful and which activities you found helpful (be very specific and site examples).  The report should be written with either `RMarkdown` (`.Rmd`) or `LaTeX` (`.Rnw`) and stored in your private repo in a directory named `MyFinal`.   Which materials and activities were not helpful (be very specific and site examples)?  List three areas where your knowledge increased during the semester (be very specific and cite examples).  Suggest potential reorderings of the course topics and rationale for doing so.  
+* Review course materials (ISCAMIII, PDS, RR).  Write a detailed review and comment on which materials you found most helpful and which activities you found helpful (be very specific and cite examples).  The report should be written with either `RMarkdown` (`.Rmd`) or `LaTeX` (`.Rnw`) and stored in your private repo in a directory named `MyFinal`.   Which materials and activities were not helpful (be very specific and cite examples)?  List three areas where your knowledge increased during the semester (be very specific and cite examples).  Suggest potential reorderings of the course topics and rationale for doing so.  
 
 * Present your poster (Dec 1).
 
