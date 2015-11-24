@@ -659,7 +659,7 @@ Submit ISCAM PR#10. NLT 23:00 11/17/15 (*Investigation 2.5: Healthy Body Tempera
 
 * ~~Read and Complete *Investigation 2.7: Water Oxygen Levels* from ISCAMIII prior to class.~~
 
-* Read chapter 13 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+* Read chapter 14 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
 
 **Friday**
 
