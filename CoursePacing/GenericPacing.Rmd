@@ -678,7 +678,11 @@ Submit ISCAM PR#10. NLT 23:00 11/17/15 (*Investigation 2.5: Healthy Body Tempera
 
 * Print out your poster. Make sure your poster is stored in your private repository in a directory named `Poster`.
 
-* Review course materials (ISCAMIII, PDS, RR).  
+* Present your poster (Dec 1).
+
+* Celebrate! 
+
+### Final 
 
 You are presented with a schedule of teaching that includes STT 5811.  Your job is to design a course that will be most helpful to your students, including assignments, activities, lectures, and investigations.  You are given access to all materials from the course you just completed.  You are required to cover all the topics of STT 5811 in a semester and to achieve the course objectives as listed on your syllabus.  You may not omit anything as students must be prepared for the second semester and the choice of topics was made at the department level.
 
@@ -692,9 +696,6 @@ How will you reorder the presentation of topics to make things more clear to you
 
 Your class plan should be written with either `RMarkdown` (`.Rmd`) or `LaTeX` (`.Rnw`) and stored in your private repo in a directory named `MyFinal`.
 
-* Present your poster (Dec 1).
-
-* Celebrate!
 
 * Final Exam (in class during exam period)
 
