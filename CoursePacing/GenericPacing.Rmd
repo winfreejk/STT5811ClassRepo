@@ -696,7 +696,8 @@ How will you reorder the presentation of topics to make things more clear to you
 
 Your class plan should be written with either `RMarkdown` (`.Rmd`) or `LaTeX` (`.Rnw`) and stored in your private repo in a directory named `MyFinal`.
 
+Submit your `MyFinal` to CrowdGrader by midnight December 8, 2015.  Provide feedback on peer work prior to 9:00 am December 10, 2015.
 
-* Final Exam (in class during exam period)
+* Final Exam December 10, 2015 9:00 am (in class during exam period)
 
 
