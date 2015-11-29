@@ -684,7 +684,7 @@ Submit ISCAM PR#10. NLT 23:00 11/17/15 (*Investigation 2.5: Healthy Body Tempera
 
 ### Final 
 
-You are presented with a schedule of teaching that includes STT 5811.  Your job is to design a course that will be most helpful to your students, including assignments, activities, lectures, and investigations.  You are given access to all materials from the course you just completed.  You are required to cover all the topics of STT 5811 in a semester and to achieve the course objectives as listed on your syllabus.  You may not omit anything as students must be prepared for the second semester and the choice of topics was made at the department level.
+You are presented with a schedule of teaching that includes STT 5811.  Your job is to design a course that will be most helpful to your students, including assignments, activities, lectures, and investigations.  You are given access to all materials from the course you just completed.  You are required to cover all the topics of STT 5811 in a semester and to achieve the course objectives as listed on your syllabus.  You may not omit anything, as students must be prepared for the second semester; and the choice of topics was made at the department level.
 
 What materials will you include in your own course?  Why did you find them helpful (be very specific and cite examples)?
 
@@ -696,7 +696,7 @@ How will you reorder the presentation of topics to make things more clear to you
 
 Your class plan should be written with either `RMarkdown` (`.Rmd`) or `LaTeX` (`.Rnw`) and stored in your private repo in a directory named `MyFinal`.
 
-Submit your `MyFinal` to CrowdGrader by midnight December 8, 2015.  Provide feedback on peer work prior to 9:00 am December 10, 2015.
+Submit your `MyFinal` to CrowdGrader by midnight December 8, 2015.  Provide feedback on peer work prior to 9:00 am December 10, 2015.  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1650](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1650).
 
 * Final Exam December 10, 2015 9:00 am (in class during exam period)
 
