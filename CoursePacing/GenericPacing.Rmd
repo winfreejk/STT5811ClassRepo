@@ -65,7 +65,7 @@ Watch the following videos:
 * [Colaboration and time travel: version control with git, github and RStudio (48 minutes)](https://www.rstudio.com/resources/webinars/archives/)      
 * [Reproducible Reporting (58 minutes)](https://www.rstudio.com/resources/webinars/archives/) 
 
-* Test drive RStudio by following the directions from [Jenny Bryan's STAT 545 course](http://stat545-ubc.github.io/git05_first-use-git-rstudio.html).
+* Test drive RStudio by following the directions from [Jenny Bryan's STAT 545 course](https://stat545-ubc.github.io/git07_git-github-rstudio.html).
 
 
 #### Optional
@@ -606,11 +606,8 @@ Does the author explain their results following the example in PDS (direction, f
 * Read Chapters 15 and 17 in PDS (Linear Regression and Confounding and Multivariate Models) and watch the embedded videos. 
 * Read the document `Regression.html` in the `/Regression` folder. 
 * Work on your poster.
-* ~~Submit ISCAM PR#12.~~
-* Submit ISCAM PR#9. Review of chapter 12 RR.
- 
 * Work on the **Regression Assignment** 
-* The **Regression Assignment** is due NLT 5 PM Friday (Nov 13).  Submit the assignment via [http://www.crowdgrader.org](http://www.crowdgrader.org).  The direct link for the **Regression Assignment** is (http://www.crowdgrader.org/).
+* The **Regression Assignment** is due NLT 5 PM Friday (Nov 13).  Submit the assignment via [http://www.crowdgrader.org](http://www.crowdgrader.org).  The direct link for the **Regression Assignment** is (https://www.crowdgrader.org/crowdgrader/venues/view_venue/1592).
 
 **Regression Assignment** 
 
@@ -618,11 +615,19 @@ This is a continuation of the material submitted for the **Correlation** submitt
 
 #### Grading Rubric for **Regression Assignment** (PR#9)
 
+Does the document have sections that explain the Purpose of the Study (0.3), the Variables used in the study (0.3), and how the data was managed (0.4)?
+
+Is all of the data management done near the beginning of the document (0.5)? 
+
 Is there a section for the Regression assignment? (0.5)
 
-Is there code and output for testing appropriate models? (1.5)
+Is there code and output for testing appropriate regression models? (0.5)
 
-Does the author describe their results appropriately? (1)
+Does the author describe their regression results appropriately? (0.5)
+
+* ~~Submit ISCAM PR#12.~~
+
+* Submit ISCAM PR#9. NLT 23:00 11/10/15 (*Investigation 2.3: Readability of Cancer Pamphlets* parts a-f; *Investigation 2.4: The Ethan Allen* parts c, d, f, h-n; RR chapters 12.)  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1591](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1591).  Include one example with code illustrating a concept you have mastered for chapter 12 of RR.  
 
 **Wednesday**
 
@@ -632,7 +637,10 @@ Does the author describe their results appropriately? (1)
 
 **Friday**
 
-* Read and Complete *Investigation 2.6: Healthy Body Temperatures (cont.)* from ISCAMIII prior to class.
+* ~~Read and Complete *Investigation 2.6: Healthy Body Temperatures (cont.)* from ISCAMIII prior to class.~~
+
+* Read and Complete *Investigation 2.5: Healthy Body Temperatures* from ISCAMIII prior to class.
+
 * After action review of **ANOVA Assignment (PR#8)**.
 
 ### Week 14: (Nov 16, 18, 20)
@@ -642,30 +650,54 @@ Does the author describe their results appropriately? (1)
 * Read Chapters 16 and 18 in PDS (Sampling and Designing Studies and Poster Presentation), and watch the embedded videos. 
 * Work on your poster.
 * ~~Submit ISCAM PR#13.~~
-* Submit ISCAM PR#10. Review of chapter 13 RR.
+Submit ISCAM PR#10. NLT 23:00 11/17/15 (*Investigation 2.5: Healthy Body Temperatures* all parts.) The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1610](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1610).  Include one example with code illustrating a concept you have mastered for chapter 13 of RR.  
+
 
 **Wednesday**
 
-* Read and Complete *Investigation 2.7: Water Oxygen Levels* from ISCAMIII prior to class.
-* Read chapter 13 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
+* Read and Complete *Investigation 2.6: Healthy Body Temperatures (cont.)* from ISCAMIII prior to class.
+
+* ~~Read and Complete *Investigation 2.7: Water Oxygen Levels* from ISCAMIII prior to class.~~
+
+* Read chapter 14 of [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book).
 
 **Friday**
 
-* Read and Complete *Investigation 2.8: Turbidity* from ISCAMIII prior to class.
+* Read and Complete *Investigation 2.7: Water Oxygen Levels* from ISCAMIII prior to class.
+
+* ~~Read and Complete *Investigation 2.8: Turbidity* from ISCAMIII prior to class.~~
+
 * After action review of **Regression Assignment (PR#9)**.
  
-### Week 15: (Nov 23, No Class Nov 25, 26, and 27; Nov 30, Dec 2----Poster Presentation Dec 3)
+### Week 15: (Nov 23, No Class Nov 25, 26, and 27; Nov 30, Dec 2 --- Poster Presentation: December 1, 2015, PLEMMONS STUDENT UNION - 137A Calloway Peak)
+
+
+* Submit ISCAM PR#11. NLT 23:00 11/24/15 (*Investigation 2.6: Healthy Body Temperatures (cont.)* all parts; *Investigation 2.7: Water Oxygen Levels* parts c-e; RR chapters 14.) The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1626](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1626)  
 
 * Work on your poster.
 
-* Print out your poster.
+* Print out your poster. Make sure your poster is stored in your private repository in a directory named `Poster`.
 
-* Review course materials (ISCAMIII, PDS, RR).  Write a review and comment on which materials you found most helpful and which activities you found helpful (be very specific and site examples).  Which materials and activities were not helpful (be very specific and site examples)?  List three areas where your knowledge increased during the semester (be very specific and site examples).  Suggest potential reorderings of the course topics and rationale for doing so.
+* Present your poster (Dec 1).
 
-* Present your poster (Dec 3).
+* Celebrate! 
 
-* Celebrate!
+### Final 
 
-* Final Exam (in class during exam period)
+You are presented with a schedule of teaching that includes STT 5811.  Your job is to design a course that will be most helpful to your students, including assignments, activities, lectures, and investigations.  You are given access to all materials from the course you just completed.  You are required to cover all the topics of STT 5811 in a semester and to achieve the course objectives as listed on your syllabus.  You may not omit anything, as students must be prepared for the second semester; and the choice of topics was made at the department level.
+
+What materials will you include in your own course?  Why did you find them helpful (be very specific and cite examples)?
+
+Which materials will you not include in your own course?  Why will you leave them out (be very specific and cite examples)?
+
+Which three topics will you find easiest to cover because of what you learned in this course (be very specific and cite examples)?
+
+How will you reorder the presentation of topics to make things more clear to your own students?  What is your rationale for any changes?
+
+Your class plan should be written with either `RMarkdown` (`.Rmd`) or `LaTeX` (`.Rnw`) and stored in your private repo in a directory named `MyFinal`.
+
+Submit your `MyFinal` to CrowdGrader by midnight December 8, 2015.  Provide feedback on peer work prior to 9:00 am December 10, 2015.  The direct link for the assignment is [https://www.crowdgrader.org/crowdgrader/venues/view_venue/1650](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1650).
+
+* Final Exam December 10, 2015 9:00 am (in class during exam period)
 
 
